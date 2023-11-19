@@ -609,16 +609,12 @@ video {
   display: block;
 }
 
-.flex {
-  display: flex;
-}
-
 .inline-flex {
   display: inline-flex;
 }
 
-.w-96 {
-  width: 24rem;
+.w-80 {
+  width: 20rem;
 }
 
 .max-w-full {
