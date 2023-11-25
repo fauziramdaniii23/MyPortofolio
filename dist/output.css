@@ -658,6 +658,10 @@ video {
   height: 4rem;
 }
 
+.h-60 {
+  height: 15rem;
+}
+
 .h-\[200px\] {
   height: 200px;
 }
@@ -696,6 +700,10 @@ video {
 
 .max-w-2xl {
   max-width: 42rem;
+}
+
+.max-w-7xl {
+  max-width: 80rem;
 }
 
 .max-w-full {
@@ -814,10 +822,6 @@ video {
 
 .bg-transparent {
   background-color: transparent;
-}
-
-.bg-\[url\(\'\/dist\/img\/bg\.jpg\'\)\] {
-  background-image: url('/dist/img/bg.jpg');
 }
 
 .bg-cover {
@@ -1000,6 +1004,13 @@ video {
 
 .duration-500 {
   transition-duration: 500ms;
+}
+
+.background-image {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url('dist/img/bg.jpg');
 }
 
 .hover\:scale-105:hover {
