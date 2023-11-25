@@ -621,8 +621,8 @@ video {
   margin-bottom: 2rem;
 }
 
-.ml-2 {
-  margin-left: 0.5rem;
+.ml-1 {
+  margin-left: 0.25rem;
 }
 
 .mr-2 {
@@ -950,6 +950,10 @@ video {
 
   .md\:-mt-11 {
     margin-top: -2.75rem;
+  }
+
+  .md\:ml-2 {
+    margin-left: 0.5rem;
   }
 
   .md\:mr-24 {
