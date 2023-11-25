@@ -1,50 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portofolio | Fauzi Ramdani</title>
     <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
   </head>
   <body>
     <!-- hero section start -->
     <section id="hero" class="pt-32">
-      <div class="container p-5">
-        <div class="container">
-          <h1 class="text-base font-semibold">Hello there, <span class="font-bold">i'm</span> <span class="block text-4xl text-primary font-bold">Fauzi Ramdani</span></h1>
+      <div class="container px-5 w-ful flex flex-col-reverse md:flex md:flex-row md:justify-evenly md:px-10">
+        <div class="container w-full">
+          <h1 class="text-base font-semibold mb-2">Hello there, <span class="inline-block animate-hallo text-2xl">👋</span> <span class="font-bold">i'm</span> <span class="block text-4xl text-primary font-bold">Fauzi Ramdani</span></h1>
           <h2 class="text-2xl font-semibold mb-2">Web Developer</h2>
-          <p class="font-medium mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, nam!</p>
+          <p class="font-medium mb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, nam!</p>
 
-          <button class="inline-flex font-semibold shadow-lg bg-primary text-white py-3 px-5 rounded-full hover:shadow-xl hover:scale-110 transition duration-200 group hover:bg-sky-400">
-            <i data-feather="arrow-down" class="bg-sky-300 rounded-full mr-2 animate-bounce group-hover:animate-none text-primary group-hover:bg-none group-hover:text-white group-hover:shadow-lg"></i> Resume
+          <div class="mb-8">
+            <a href="" class="group relative inline-flex justify-center items-center bg-transparent ml-2 border-[3px] border-primary w-16 h-16 rounded-full hover:bg-primary hover:scale-110 transition-all duration-500 hover:shadow-2xl"
+              ><i class="bx bx-envelope text-3xl text-primary font-bold group-hover:text-white"></i><span class="absolute -bottom-6 text-base invisible group-hover:visible text-primary">Email</span></a
+            >
+            <a href="" class="group relative inline-flex justify-center items-center bg-transparent ml-2 border-[3px] border-primary w-16 h-16 rounded-full hover:bg-primary hover:scale-110 transition duration-500 hover:shadow-2xl"
+              ><i class="bx bxl-whatsapp text-3xl text-primary font-bold group-hover:text-white"></i><span class="absolute -bottom-6 text-base invisible group-hover:visible text-primary">Whatsapp</span></a
+            >
+            <a href="" class="group relative inline-flex justify-center items-center bg-transparent ml-2 border-[3px] border-primary w-16 h-16 rounded-full hover:bg-primary hover:scale-110 transition duration-500 hover:shadow-2xl"
+              ><i class="bx bxl-instagram-alt text-3xl text-primary font-bold group-hover:text-white"></i><span class="absolute -bottom-6 text-base invisible group-hover:visible text-primary">Instagram</span></a
+            >
+            <a href="" class="group relative inline-flex justify-center items-center bg-transparent ml-2 border-[3px] border-primary w-16 h-16 rounded-full hover:bg-primary hover:scale-110 transition duration-500 hover:shadow-2xl"
+              ><i class="bx bxl-github text-3xl text-primary font-bold group-hover:text-white"></i><span class="absolute -bottom-6 text-base invisible group-hover:visible text-primary">Github</span></a
+            >
+
+            <a href="" class="group relative inline-flex justify-center items-center bg-transparent ml-2 border-[3px] border-primary w-16 h-16 rounded-full hover:bg-primary hover:scale-110 transition duration-500 hover:shadow-2xl"
+              ><i class="bx bxl-linkedin-square text-3xl text-primary font-bold group-hover:text-white"></i><span class="absolute -bottom-6 text-base invisible group-hover:visible text-primary">Linkedin</span></a
+            >
+          </div>
+
+          <button class="inline-flex font-semibold shadow-lg bg-primary text-white text-xl py-5 px-10 rounded-full hover:shadow-xl hover:scale-105 transition duration-200 group hover:bg-teal-500">
+            <i data-feather="arrow-down" class="bx bx-down-arrow-alt text-2xl bg-teal-500 rounded-full mr-2 animate-bounce group-hover:animate-none text-primary group-hover:bg-primary group-hover:text-white group-hover:shadow-lg"></i>
+            View Resume
           </button>
         </div>
         <div class="flex items-center justify-center">
-          <div class="relative pt-10 w-80">
-            <img src="dist/img/fauzi.png" alt="fauzi" class="max-w-full mx-auto rounded-full" />
-            <span class="absolute top-20 -translate-x-1/2 left-1/2 -z-10">
-              <svg widht="350" height="350" class="animate-spin-slow" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fill="#0ea5e9"
-                  d="M42.6,-72.6C56.4,-65.8,69.7,-56.8,76.4,-44.4C83.1,-31.9,83.3,-16,81.4,-1.1C79.6,13.8,75.7,27.6,69.1,40.4C62.6,53.1,53.3,64.7,41.4,70.6C29.4,76.4,14.7,76.4,-0.3,76.9C-15.4,77.5,-30.7,78.7,-43.2,73.2C-55.7,67.6,-65.3,55.5,-70.9,42.2C-76.4,28.8,-77.9,14.4,-79.4,-0.8C-80.8,-16.1,-82.2,-32.2,-76.3,-44.9C-70.4,-57.7,-57.3,-67,-43.4,-73.8C-29.4,-80.6,-14.7,-84.7,-0.2,-84.4C14.4,-84.1,28.7,-79.4,42.6,-72.6Z"
-                  transform="translate(100 100) scale(1.0)"
-                />
-              </svg>
-            </span>
+          <div class="md:mr-24 md:-mt-11">
+            <div class="relative w-80">
+              <img src="dist/img/fauzi.png" alt="fauzi" class="relative z-10 max-w-full mx-auto rounded-full" />
+              <div class="absolute top-20 md:top-10 -translate-x-1/2 left-1/2">
+                <svg widht="350" height="320" class="animate-spin-slow lg:w-72" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill="#5eead4"
+                    d="M42.6,-72.6C56.4,-65.8,69.7,-56.8,76.4,-44.4C83.1,-31.9,83.3,-16,81.4,-1.1C79.6,13.8,75.7,27.6,69.1,40.4C62.6,53.1,53.3,64.7,41.4,70.6C29.4,76.4,14.7,76.4,-0.3,76.9C-15.4,77.5,-30.7,78.7,-43.2,73.2C-55.7,67.6,-65.3,55.5,-70.9,42.2C-76.4,28.8,-77.9,14.4,-79.4,-0.8C-80.8,-16.1,-82.2,-32.2,-76.3,-44.9C-70.4,-57.7,-57.3,-67,-43.4,-73.8C-29.4,-80.6,-14.7,-84.7,-0.2,-84.4C14.4,-84.1,28.7,-79.4,42.6,-72.6Z"
+                    transform="translate(100 100) scale(1.0)"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- hero section end -->
+
     <!-- about section start -->
-    <div></div>
+    <div class="mt-96 h-96">
+      <div class="relative group">
+        <!-- Konten yang ingin di-hover -->
+        <div class="bg-gray-300 p-4">Konten Anda</div>
+
+        <!-- Teks yang muncul di atas konten saat dihover -->
+        <p class="absolute top-0 left-0 w-full h-full bg-gray-800 text-white text-center invisible opacity-0 group-hover:opacity-100 group-hover:visible">Teks yang Muncul di Hover</p>
+      </div>
+
+      <span class="inline-block animate-hallo">aa</span>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam corporis sequi ipsa a tempore, quaerat atque voluptas placeat! Rerum omnis perferendis, vel, doloremque amet soluta deleniti in quibusdam modi illum itaque cumque. At
+      doloribus tempora facere? Laboriosam, temporibus quibusdam vitae voluptatibus nostrum vel, corporis maiores sint quo blanditiis nobis sequi. Odit enim consectetur nulla voluptatum aliquid dolorem fuga! Officia blanditiis nulla eveniet
+      mollitia voluptatum dolore iusto commodi incidunt doloribus aliquam corrupti necessitatibus rerum cumque quaerat, deserunt alias facere saepe atque nesciunt. Recusandae magni, vel nulla minima iusto eos quas temporibus consectetur
+      dolores, aliquam dicta provident, ex modi dignissimos! Voluptas, nihil.
+    </div>
     <!-- about section end -->
     <!-- choose one -->
-
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script>
-      feather.replace();
-    </script>
   </body>
 </html>
