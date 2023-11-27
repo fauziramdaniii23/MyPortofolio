@@ -8,8 +8,41 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
   </head>
   <body>
+    <!-- header start -->
+    <header class="absolute top-0 left-0 w-full flex items-center z-10">
+      <div class="container flex justify-between items-center py-4">
+        <div class="px-4">
+          <a href="" class="inline-block font-bold text-lg text-primary">Fauziramdani</a>
+        </div>
+        <!-- <nav id="nav-menu" class="bg-slate-200 fixed top-5 right-0 flex flex-col h-screen">
+          <div>
+            <a href="">Home</a>
+            <a href="">about</a>
+            <a href="">Contact</a>
+          </div>
+        </nav> -->
+        <div class="flex items-center justify-between px-4">
+          <button id="navButton" name="navButton" type="button" class="block absolute right-4 hover:scale-110 transition duration-300 lg:hidden">
+            <span class="w-[20px] h-[2px] my-1 block bg-dark transition ease-in-out duration-300 origin-top-left"></span>
+            <span class="w-[20px] h-[2px] my-1 block bg-dark transition ease-in-out duration-300"></span>
+            <span class="w-[20px] h-[2px] my-1 block bg-dark transition ease-in-out duration-300 origin-bottom-left"></span>
+          </button>
+          <nav id="nav-menu" class="absolute hidden py-5 bg-white shadow-xl right-4 top-full max-w-[200px] bg-opacity-95 w-full rounded-lg lg:static lg:inline-block lg:max-w-full lg:bg-transparent lg:shadow-none lg:p-0">
+            <div class="flex flex-col justify-center lg:static lg:inline-block">
+              <a href="" class="text-base py-2 mx-8 font-semibold hover:text-primary">Home</a>
+              <a href="" class="text-base py-2 mx-8 font-semibold hover:text-primary">About</a>
+              <a href="" class="text-base py-2 mx-8 font-semibold hover:text-primary">Project</a>
+              <a href="" class="text-base py-2 mx-8 font-semibold hover:text-primary">Certificate</a>
+              <a href="" class="text-base py-2 mx-8 font-semibold hover:text-primary">Contact</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- header start end -->
+
     <!-- hero section start -->
-    <section id="hero" class="flex justify-center pt-32 mb-4 md:px-10">
+    <section id="hero" class="flex justify-center pt-20 mb-4 md:px-10 lg:pt-28">
       <div class="container px-5 w-ful flex flex-col-reverse md:flex md:flex-row md:justify-evenly md:px-10">
         <div class="container w-full">
           <h1 class="text-base font-semibold mb-4">
@@ -58,7 +91,7 @@
         <div class="flex mb-4 items-center justify-center">
           <div class="lg:mr-16 md:-mt-11">
             <div class="relative w-80">
-              <img src="dist/img/fauzi.png" alt="fauzi" class="relative z-10 max-w-full mx-auto rounded-full" />
+              <img src="dist/img/fauzi.png" alt="fauzi" class="relative z-[1] max-w-full mx-auto rounded-full" />
               <div class="absolute top-20 md:top-10 -translate-x-1/2 left-1/2">
                 <svg widht="350" height="320" class="animate-spin-slow lg:w-72" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -134,14 +167,11 @@
 
     <!-- section motivate end-->
 
-    <!-- <div class="max-w-7xl h-60 bg-fixed bg-cover bg-center" style="background-image: url(/dist/img/Laravel.png)">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias perspiciatis officiis debitis recusandae quae quos odit incidunt voluptas nostrum at, aut id nisi numquam, dolorum nesciunt error nam molestiae odio.</p>
-    </div> -->
-
     <!-- about section start -->
     <div class="pt-[50rem]">
       <h1>jarak</h1>
     </div>
     <!-- about section end -->
+    <script src="dist/js/script.js"></script>
   </body>
 </html>
