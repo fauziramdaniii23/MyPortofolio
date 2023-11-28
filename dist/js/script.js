@@ -13,6 +13,7 @@ window.onscroll = function () {
 
   if (window.pageYOffset > navFixed) {
     header.classList.add('navbar-fix');
+    // header.classList.remove('absolute');
   } else {
     header.classList.remove('navbar-fix');
   }
