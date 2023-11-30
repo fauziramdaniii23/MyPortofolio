@@ -9,18 +9,12 @@
   </head>
   <body>
     <!-- header start -->
-    <header class="absolute top-0 left-0 w-full flex items-center z-10">
+    <header class="absolute w-full flex items-center justify-center z-10">
       <div class="container flex justify-between items-center py-4">
         <div class="px-4">
           <a href="" class="inline-block font-bold text-lg text-primary">fauziramdani</a>
         </div>
-        <!-- <nav id="nav-menu" class="bg-slate-200 fixed top-5 right-0 flex flex-col h-screen">
-          <div>
-            <a href="">Home</a>
-            <a href="">about</a>
-            <a href="">Contact</a>
-          </div>
-        </nav> -->
+
         <div class="flex items-center justify-between px-4">
           <button id="navButton" name="navButton" type="button" class="block absolute right-4 hover:scale-110 transition duration-300 lg:hidden">
             <span class="w-[20px] h-[2px] my-1 block bg-dark transition ease-in-out duration-300 origin-top-left"></span>
@@ -48,7 +42,7 @@
           <h1 class="text-base font-semibold mb-4">
             Hello there, <span class="inline-block animate-hallo text-2xl">👋</span> <span class="inline-block font-bold">My Name</span> <span class="block text-4xl md:text-6xl text-primary font-bold">Fauzi Ramdani</span>
           </h1>
-          <p class="mb-2 text-base">i'am a <span class="text-2xl font-bold bg-primary rounded-xl px-3 py-1 text-white">Web Developer</span></p>
+          <p class="mb-2 text-base"><span class="text-2xl font-bold bg-primary rounded-xl px-3 py-1 text-white">Web Developer</span></p>
           <p class="container text-slate-700 font-medium mt-4 mb-4 max-w-2xl md:mb-6">
             Fresh graduate of Informatics Engineering from Adhirajasa Reswara Sanjaya University, GPA 3.48 (4 years). With internship experience at PT. Maksi media Indonesia as a Back-end Developer. Looking for opportunities for a career as
             a software engineer
@@ -118,7 +112,7 @@
             <img class="group-hover:opacity-25 transition duration-300" src="dist/img/HTML5.png" alt="" />
             <p class="absolute font-semibold invisible group-hover:visible opacity-100 bg-slate-950 text-white text-xs md:text-base px-2 rounded-xl">HTML</p>
           </div>
-          <div class="relative group p-4 mt-1 w-[60px] h-[60px] md:w-20 md:h-20 md:mt-2 inline-flex justify-center items-center">
+          <div class="relative group p-4 mt-1 w-[56px] h-[56px] md:w-20 md:h-20 md:mt-2 inline-flex justify-center items-center">
             <img class="group-hover:opacity-25 transition duration-300" src="dist/img/CSS3_logo.png" alt="" />
             <p class="absolute font-semibold invisible group-hover:visible opacity-100 bg-slate-950 text-white text-xs md:text-base px-2 rounded-xl">CSS</p>
           </div>
@@ -161,13 +155,15 @@
     <!-- section motivate -->
     <section class="max-w-screen-2xl h-36 lg:h-48 m-auto">
       <div class="background-image flex h-full justify-center items-center text-center" style="background-image: url(dist/img/bg.jpg)">
-        <p class="inline-block bg-black mx-10 md:px-10 md:py-4 italic rounded-md text-white md:text-2xl font-bold">"If you never try, you'll never know what you are capable of"</p>
+        <p class="inline-block bg-black mx-10 md:px-10 md:py-4 italic rounded-md text-white md:text-2xl font-bold">
+          <i class="bx bxs-quote-alt-left text-primary"></i> If you never try, you'll never know what you are capable of <i class="bx bxs-quote-alt-right text-primary"></i>
+        </p>
       </div>
     </section>
     <!-- section motivate end-->
 
     <!-- about section start -->
-    <section class="py-5 lg:py-8 m-auto bg-slate-100">
+    <!-- <section class="max-w-screen-2xl py-5 lg:py-8 m-auto bg-slate-100">
       <div class="text-center">
         <h1 class="inline-block text-2xl md:text-4xl font-semibold">What I Do?</h1>
       </div>
@@ -187,11 +183,92 @@
           <img src="dist/img/code.png" class="w-48 m-auto md:w-52 lg:w-60" alt="" />
         </div>
       </div>
+    </section> -->
+
+    <section class="max-w-screen-2xl m-auto py-5 bg-slate-100">
+      <div class="text-center mb-2 md:mb-4">
+        <h1 class="text-2xl font-semibold md:text-4xl">What I Do?</h1>
+      </div>
+      <div class="flex justify-center flex-wrap">
+        <div class="group text-center border-2 hover:border-primary hover:scale-105 rounded-xl w-full bg-slate-200 mx-5 my-2 px-4 transition duration-300 md:pt-4 md:w-60">
+          <p class="text-6xl text-primary"><i class="bx bx-globe"></i></p>
+          <p class="text-base text-slate-900 py-2 group-hover:text-black">Solve IT-related problems with broad knowledge. From Technology Solutions, Security, Networking, Software, Hardware, Electricity</p>
+        </div>
+        <div class="group text-center border-2 hover:border-primary hover:scale-105 rounded-xl w-full bg-slate-200 mx-5 my-2 px-4 transition duration-300 md:pt-4 md:w-56">
+          <p class="text-6xl text-primary"><i class="bx bx-paint"></i></p>
+          <p class="text-base text-slate-900 py-2 group-hover:text-black">Build responsive website design using Bootstrap and Tailwind CSS</p>
+        </div>
+        <div class="group text-center border-2 hover:border-primary hover:scale-105 rounded-xl w-full bg-slate-200 mx-5 my-2 px-4 transition duration-300 md:pt-4 md:w-56">
+          <p class="text-6xl text-primary"><i class="bx bx-code-alt"></i></p>
+          <p class="text-base text-slate-900 py-2 group-hover:text-black">Improve quality website functionality using PHP with the Laravel framework</p>
+        </div>
+        <div class="group text-center border-2 hover:border-primary hover:scale-105 rounded-xl w-full bg-slate-200 mx-5 my-2 px-4 transition duration-300 md:pt-4 md:w-80">
+          <p class="text-6xl text-primary"><i class="bx bxl-git"></i></p>
+          <p class="text-base text-slate-900 py-2 group-hover:text-black">
+            Working with a team via GitHub, proven by my internship experience at PT Maksi Media Indonesia as a back-end developer using the Java Springboot framework, even though I have just tried a new language, I like new challenges
+          </p>
+        </div>
+      </div>
     </section>
     <!-- about section end -->
+
+    <!-- Project section -->
+    <section class="max-w-screen-2xl py-5 m-auto">
+      <div class="text-center text-2xl font-semibold">
+        <h1>Project</h1>
+        <div></div>
+      </div>
+    </section>
+    <!-- Project section end -->
+    <button
+      data-ripple-light="true"
+      data-dialog-target="dialog"
+      class="select-none rounded-lg bg-gradient-to-tr from-gray-900 to-gray-800 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+    >
+      Open Dialog
+    </button>
+    <div
+      data-dialog-backdrop="dialog"
+      data-dialog-backdrop-close="true"
+      class="pointer-events-none fixed inset-0 z-[999] grid h-screen w-screen place-items-center bg-black bg-opacity-60 opacity-0 backdrop-blur-sm transition-opacity duration-300"
+    >
+      <div data-dialog="dialog" class="relative m-4 w-2/5 min-w-[40%] max-w-[40%] rounded-lg bg-white font-sans text-base font-light leading-relaxed text-blue-gray-500 antialiased shadow-2xl">
+        <div class="flex items-center p-4 font-sans text-2xl antialiased font-semibold leading-snug shrink-0 text-blue-gray-900">Its a simple dialog.</div>
+        <div class="relative p-4 font-sans text-base antialiased font-light leading-relaxed border-t border-b border-t-blue-gray-100 border-b-blue-gray-100 text-blue-gray-500">
+          The key to more success is to have a lot of pillows. Put it this way, it took me twenty five years to get these plants, twenty five years of blood sweat and tears, and I&apos;m never giving up, I&apos;m just getting started.
+          I&apos;m up to something. Fan luv.
+        </div>
+        <div class="flex flex-wrap items-center justify-end p-4 shrink-0 text-blue-gray-500">
+          <button
+            data-ripple-dark="true"
+            data-dialog-close="true"
+            class="px-6 py-3 mr-1 font-sans text-xs font-bold text-red-500 uppercase transition-all rounded-lg middle none center hover:bg-red-500/10 active:bg-red-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+          >
+            Cancel
+          </button>
+          <button
+            data-ripple-light="true"
+            data-dialog-close="true"
+            class="middle none center rounded-lg bg-gradient-to-tr from-green-600 to-green-400 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-green-500/20 transition-all hover:shadow-lg hover:shadow-green-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+          >
+            Confirm
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <button
+      class="middle none center rounded-lg bg-pink-500 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+      data-ripple-light="true"
+    >
+      Button
+    </button>
+
     <div class="pt-[50rem]">
       <h1>jarak</h1>
     </div>
-    <script src="dist/js/script.js"></script>
+
+    <script src="/node_modules/@material-tailwind/html/scripts/dialog.js"></script>
+    <script src="/dist/js/script.js"></script>
   </body>
 </html>
