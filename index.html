@@ -6,10 +6,18 @@
     <title>Portofolio | Fauzi Ramdani</title>
     <link rel="stylesheet" href="dist/output.css" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+    <script>
+      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+      if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
   </head>
   <body>
     <!-- header start -->
-    <header class="absolute w-full flex items-center justify-center z-10">
+    <header id="header" class="absolute w-full flex items-center justify-center z-10">
       <div class="container flex justify-between items-center py-4">
         <div class="px-4">
           <a href="" class="inline-block font-bold text-lg text-primary">fauziramdani</a>
@@ -162,29 +170,7 @@
     </section>
     <!-- section motivate end-->
 
-    <!-- about section start -->
-    <!-- <section class="max-w-screen-2xl py-5 lg:py-8 m-auto bg-slate-100">
-      <div class="text-center">
-        <h1 class="inline-block text-2xl md:text-4xl font-semibold">What I Do?</h1>
-      </div>
-      <div class="md:flex md:flex-row-reverse">
-        <div class="p-4">
-          <p class="p-1 text-base text-slate-800 md:text-lg lg:text-xl">
-            <i class="bx bx-chevrons-right text-primary text-lg md:text-2xl"></i> Solve IT-related problems with broad knowledge. From Technology Solutions, Security, Networking, Software, Hardware, Electricity.
-          </p>
-          <p class="p-1 text-base text-slate-800 md:text-lg lg:text-xl"><i class="bx bx-chevrons-right text-primary text-lg md:text-2xl"></i> Build responsive website designs using Bootstrap and Tailwind CSS.</p>
-          <p class="p-1 text-base text-slate-800 md:text-lg lg:text-xl"><i class="bx bx-chevrons-right text-primary text-lg md:text-2xl"></i> Improve quality website functionality using PHP with the Laravel framework.</p>
-          <p class="p-1 text-base text-slate-800 md:text-lg lg:text-xl">
-            <i class="bx bx-chevrons-right text-primary text-lg md:text-2xl"></i> Working with a team via GitHub, proven by my internship experience at PT Maksi Media Indonesia as a back-end developer using the Java Springboot framework,
-            even though I have just tried a new language, I like new challenges
-          </p>
-        </div>
-        <div class="container text-center py-4 flex justify-center items-center">
-          <img src="dist/img/code.png" class="w-48 m-auto md:w-52 lg:w-60" alt="" />
-        </div>
-      </div>
-    </section> -->
-
+    <!-- section About -->
     <section class="max-w-screen-2xl m-auto py-5 bg-slate-100">
       <div class="text-center mb-2 md:mb-4">
         <h1 class="text-2xl font-semibold md:text-4xl">What I Do?</h1>
@@ -257,18 +243,82 @@
       </div>
     </div>
 
-    <button
-      class="middle none center rounded-lg bg-pink-500 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-      data-ripple-light="true"
-    >
-      Button
+    <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+      <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+    </a>
+
+    <div id="indicators-carousel" class="relative w-full" data-carousel="static">
+      <!-- Carousel wrapper -->
+      <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+        <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+          <img src="/dist/img/code.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="/dist/img/Bootstra.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="/dist/img/Laravel.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="/dist/img/git.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+        </div>
+        <!-- Item 5 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="/dist/img/PHP.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+        </div>
+      </div>
+      <!-- Slider indicators -->
+      <div class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2">
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+      </div>
+      <!-- Slider controls -->
+      <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span
+          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-teal-200 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+        >
+          <svg class="w-4 h-4 text-primary dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
+          </svg>
+          <span class="sr-only">Previous</span>
+        </span>
+      </button>
+      <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span
+          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-primary dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+        >
+          <svg class="w-4 h-4 text-primary dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
+          </svg>
+          <span class="sr-only">Next</span>
+        </span>
+      </button>
+    </div>
+
+    <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+      <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+      <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+        ></path>
+      </svg>
     </button>
 
     <div class="pt-[50rem]">
       <h1>jarak</h1>
     </div>
-
-    <script src="/node_modules/@material-tailwind/html/scripts/dialog.js"></script>
     <script src="/dist/js/script.js"></script>
+    <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="/node_modules/@material-tailwind/html/scripts/dialog.js"></script>
   </body>
 </html>

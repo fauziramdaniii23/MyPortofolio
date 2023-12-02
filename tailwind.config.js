@@ -1,8 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 
-const withMT = require('@material-tailwind/html/utils/withMT');
-module.exports = withMT({
-  content: ['index.html'],
+// const withMT = require('@material-tailwind/html/utils/withMT');
+module.exports = {
+  content: ['index.html', './node_modules/flowbite/**/*.js'],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -21,5 +22,5 @@ module.exports = withMT({
       },
     },
   },
-  plugins: ['prettier-plugin-tailwindcss'],
-});
+  plugins: [require('flowbite/plugin')],
+};
