@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,15 +15,15 @@
       }
     </script>
   </head>
-  <body>
+  <body class="bg-slate-100 dark:bg-slate-900">
     <!-- header start -->
-    <header id="header" class="absolute w-full flex items-center justify-center z-10">
+    <header class="absolute w-full flex items-center z-50">
       <div class="container flex justify-between items-center py-4">
-        <div class="px-4">
-          <a href="" class="inline-block font-bold text-lg text-primary">fauziramdani</a>
+        <div class="ml-4">
+          <a href="" class="inline-block font-bold text-lg text-first">fauziramdani</a>
         </div>
 
-        <div class="flex items-center justify-between px-4">
+        <div class="flex items-center justify-between">
           <button id="navButton" name="navButton" type="button" class="block absolute right-4 hover:scale-110 transition duration-300 lg:hidden">
             <span class="w-[20px] h-[2px] my-1 block bg-dark transition ease-in-out duration-300 origin-top-left"></span>
             <span class="w-[20px] h-[2px] my-1 block bg-dark transition ease-in-out duration-300"></span>
@@ -31,11 +31,12 @@
           </button>
           <nav id="nav-menu" class="absolute hidden py-5 bg-white shadow-xl right-4 top-full max-w-[200px] bg-opacity-95 w-full rounded-lg lg:static lg:inline-block lg:max-w-full lg:bg-transparent lg:shadow-none lg:p-0">
             <div class="flex flex-col justify-center lg:static lg:inline-block">
-              <a href="" class="text-base py-2 mx-8 font-semibold hover:text-primary">Home</a>
-              <a href="" class="text-base py-2 mx-8 font-semibold hover:text-primary">About</a>
-              <a href="" class="text-base py-2 mx-8 font-semibold hover:text-primary">Project</a>
-              <a href="" class="text-base py-2 mx-8 font-semibold hover:text-primary">Certificate</a>
-              <a href="" class="text-base py-2 mx-8 font-semibold hover:text-primary">Contact</a>
+              <a href="#home" class="text-base text-slate-700 dark:text-white py-2 mx-6 font-semibold hover:text-first">Home</a>
+              <a href="#about" class="text-base text-slate-700 dark:text-white py-2 mx-6 font-semibold hover:text-first">About</a>
+              <a href="#project" class="text-base text-slate-700 dark:text-white py-2 mx-6 font-semibold hover:text-first">Project</a>
+              <a href="#experience" class="text-base text-slate-700 dark:text-white py-2 mx-6 font-semibold hover:text-first">Experience</a>
+              <a href="#certificate" class="text-base text-slate-700 dark:text-white py-2 mx-6 font-semibold hover:text-first">Certificate</a>
+              <a href="contact" class="text-base text-slate-700 dark:text-white py-2 mx-6 font-semibold hover:text-first">Contact</a>
             </div>
           </nav>
         </div>
@@ -44,14 +45,14 @@
     <!-- header start end -->
 
     <!-- hero section start -->
-    <section id="hero" class="flex justify-center pt-20 mb-4 md:px-10 lg:pt-28">
-      <div class="container px-5 w-ful flex flex-col-reverse md:flex md:flex-row md:justify-evenly md:px-10">
-        <div class="container w-full">
-          <h1 class="text-base font-semibold mb-4">
-            Hello there, <span class="inline-block animate-hallo text-2xl">👋</span> <span class="inline-block font-bold">My Name</span> <span class="block text-4xl md:text-6xl text-primary font-bold">Fauzi Ramdani</span>
+    <section id="home" class="relative z-10 flex justify-center pt-20 lg:pt-28">
+      <div class="w-full m-5 flex flex-col-reverse md:flex-row md:justify-around">
+        <div class="">
+          <h1 class="text-base font-semibold mb-4 dark:text-white">
+            Hello there, <span class="inline-block animate-hallo text-2xl">👋</span> <span class="inline-block font-bold">My Name</span> <span class="block text-4xl md:text-6xl text-first font-bold">Fauzi Ramdani</span>
           </h1>
-          <p class="mb-2 text-base"><span class="text-2xl font-bold bg-primary rounded-xl px-3 py-1 text-white">Web Developer</span></p>
-          <p class="container text-slate-700 font-medium mt-4 mb-4 max-w-2xl md:mb-6">
+          <p class="mb-2 text-base"><span class="text-2xl font-bold bg-first rounded-xl px-3 py-1 text-white">Web Developer</span></p>
+          <p class="container text-slate-800 dark:text-white font-medium my-4 max-w-2xl md:mb-6">
             Fresh graduate of Informatics Engineering from Adhirajasa Reswara Sanjaya University, GPA 3.48 (4 years). With internship experience at PT. Maksi media Indonesia as a Back-end Developer. Looking for opportunities for a career as
             a software engineer
           </p>
@@ -59,42 +60,42 @@
           <div class="container mb-4 md:mb-6">
             <a
               href=""
-              class="group relative inline-flex justify-center items-center bg-transparent ml-1 md:ml-2 mb-2 border-[2px] border-primary w-[50px] h-[50px] rounded-full md:w-16 md:h-16 hover:bg-primary hover:scale-110 transition-all duration-500 hover:shadow-2xl"
-              ><i class="bx bx-envelope text-2xl md:text-3xl text-primary font-bold group-hover:text-white"></i><span class="absolute -bottom-6 text-sm invisible group-hover:visible text-primary">Email</span></a
+              class="group relative inline-flex justify-center items-center bg-transparent ml-1 md:ml-2 mb-2 border-[2px] border-first w-[50px] h-[50px] rounded-full md:w-16 md:h-16 hover:bg-first text-first hover:scale-110 transition-all duration-500 hover:shadow-2xl"
+              ><i class="bx bx-envelope text-2xl md:text-3xl text-first font-bold group-hover:text-white"></i><span class="absolute -bottom-6 text-sm invisible group-hover:visible text-first">Email</span></a
             >
             <a
               href=""
-              class="group relative inline-flex justify-center items-center bg-transparent ml-1 md:ml-2 mb-2 border-[2px] border-primary w-[50px] h-[50px] rounded-full md:w-16 md:h-16 hover:bg-primary hover:scale-110 transition duration-500 hover:shadow-2xl"
-              ><i class="bx bxl-whatsapp text-2xl md:text-3xl text-primary font-bold group-hover:text-white"></i><span class="absolute -bottom-6 text-sm invisible group-hover:visible text-primary">Whatsapp</span></a
+              class="group relative inline-flex justify-center items-center bg-transparent ml-1 md:ml-2 mb-2 border-[2px] border-first w-[50px] h-[50px] rounded-full md:w-16 md:h-16 hover:bg-first text-first hover:scale-110 transition duration-500 hover:shadow-2xl"
+              ><i class="bx bxl-whatsapp text-2xl md:text-3xl text-first font-bold group-hover:text-white"></i><span class="absolute -bottom-6 text-sm invisible group-hover:visible text-first">Whatsapp</span></a
             >
             <a
               href=""
-              class="group relative inline-flex justify-center items-center bg-transparent ml-1 md:ml-2 mb-2 border-[2px] border-primary w-[50px] h-[50px] rounded-full md:w-16 md:h-16 hover:bg-primary hover:scale-110 transition duration-500 hover:shadow-2xl"
-              ><i class="bx bxl-instagram-alt text-2xl md:text-3xl text-primary font-bold group-hover:text-white"></i><span class="absolute -bottom-6 text-sm invisible group-hover:visible text-primary">Instagram</span></a
+              class="group relative inline-flex justify-center items-center bg-transparent ml-1 md:ml-2 mb-2 border-[2px] border-first text-first w-[50px] h-[50px] rounded-full md:w-16 md:h-16 hover:bg-first hover:scale-110 transition duration-500 hover:shadow-2xl"
+              ><i class="bx bxl-instagram-alt text-2xl md:text-3xl text-first font-bold group-hover:text-white"></i><span class="absolute -bottom-6 text-sm invisible group-hover:visible text-first">Instagram</span></a
             >
             <a
               href=""
-              class="group relative inline-flex justify-center items-center bg-transparent ml-1 md:ml-2 mb-2 border-[2px] border-primary w-[50px] h-[50px] rounded-full md:w-16 md:h-16 hover:bg-primary hover:scale-110 transition duration-500 hover:shadow-2xl"
-              ><i class="bx bxl-github text-2xl md:text-3xl text-primary font-bold group-hover:text-white"></i><span class="absolute -bottom-6 text-sm invisible group-hover:visible text-primary">Github</span></a
+              class="group relative inline-flex justify-center items-center bg-transparent ml-1 md:ml-2 mb-2 border-[2px] border-first text-first w-[50px] h-[50px] rounded-full md:w-16 md:h-16 hover:bg-first hover:scale-110 transition duration-500 hover:shadow-2xl"
+              ><i class="bx bxl-github text-2xl md:text-3xl text-first font-bold group-hover:text-white"></i><span class="absolute -bottom-6 text-sm invisible group-hover:visible text-first">Github</span></a
             >
 
             <a
               href=""
-              class="group relative inline-flex justify-center items-center bg-transparent ml-1 md:ml-2 mb-2 border-[2px] border-primary w-[50px] h-[50px] rounded-full md:w-16 md:h-16 hover:bg-primary hover:scale-110 transition duration-500 hover:shadow-2xl"
-              ><i class="bx bxl-linkedin-square text-2xl md:text-3xl text-primary font-bold group-hover:text-white"></i><span class="absolute -bottom-6 text-sm invisible group-hover:visible text-primary">Linkedin</span></a
+              class="group relative inline-flex justify-center items-center bg-transparent ml-1 md:ml-2 mb-2 border-[2px] border-first w-[50px] h-[50px] rounded-full md:w-16 md:h-16 hover:bg-first text-first hover:scale-110 transition duration-500 hover:shadow-2xl"
+              ><i class="bx bxl-linkedin-square text-2xl md:text-3xl text-first font-bold group-hover:text-white"></i><span class="absolute -bottom-6 text-sm invisible group-hover:visible text-first">Linkedin</span></a
             >
           </div>
 
-          <button class="inline-flex font-semibold shadow-lg bg-primary text-white text-xl py-3 px-8 rounded-full hover:shadow-xl hover:scale-105 transition duration-200 group hover:bg-teal-500">
-            <i data-feather="arrow-down" class="bx bx-down-arrow-alt text-2xl bg-teal-500 rounded-full mr-2 animate-bounce group-hover:animate-none text-primary group-hover:bg-primary group-hover:text-white group-hover:shadow-lg"></i>
+          <button class="inline-flex font-semibold shadow-lg bg-first text-white text-xl py-3 px-8 rounded-full hover:shadow-xl hover:scale-105 transition duration-200 group hover:bg-teal-500">
+            <i data-feather="arrow-down" class="bx bx-down-arrow-alt text-2xl bg-teal-500 rounded-full mr-2 animate-bounce group-hover:animate-none text-first group-hover:bg-first group-hover:text-white group-hover:shadow-lg"></i>
             View Resume
           </button>
         </div>
         <div class="flex mb-4 items-center justify-center">
           <div class="lg:mr-16 md:-mt-11">
             <div class="relative w-80">
-              <img src="dist/img/fauzi.png" alt="fauzi" class="relative z-[1] w-52 md:w-64 mx-auto rounded-full" />
-              <div class="absolute top-5 md:top-10 -translate-x-1/2 left-1/2">
+              <img src="dist/img/fauzi.png" alt="fauzi" class="relative w-52 md:w-64 mx-auto rounded-full" />
+              <div class="absolute top-5 md:top-10 -translate-x-1/2 left-1/2" style="z-index: -1">
                 <svg widht="250px" height="250px" class="animate-spin-slow lg:w-72" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                   <path
                     fill="#5eead4"
@@ -113,7 +114,7 @@
     <section class="md:flex md:justify-evenly mt-8 mb-4 md:mb-6 md:mt-10">
       <div class="w-full text-center">
         <h1 class="m-auto text-lg md:text-xl font-bold text-slate-800 mb-2">
-          <span class="underline underline-offset-8 decoration-primary">SKILLS</span> <span class="text-slate-500 text-sm">and</span> <span class="underline underline-offset-8 decoration-primary">TOOLS</span>
+          <span class="underline underline-offset-8 decoration-first">SKILLS</span> <span class="text-slate-500 text-sm">and</span> <span class="underline underline-offset-8 decoration-first">TOOLS</span>
         </h1>
         <div class="flex justify-center flex-wrap md:gap-2">
           <div class="relative group p-4 w-16 h-16 md:w-24 md:h-24 inline-flex justify-center items-center">
@@ -164,32 +165,32 @@
     <section class="max-w-screen-2xl h-36 lg:h-48 m-auto">
       <div class="background-image flex h-full justify-center items-center text-center" style="background-image: url(dist/img/bg.jpg)">
         <p class="inline-block bg-black mx-10 md:px-10 md:py-4 italic rounded-md text-white md:text-2xl font-bold">
-          <i class="bx bxs-quote-alt-left text-primary"></i> If you never try, you'll never know what you are capable of <i class="bx bxs-quote-alt-right text-primary"></i>
+          <i class="bx bxs-quote-alt-left text-first"></i> If you never try, you'll never know what you are capable of <i class="bx bxs-quote-alt-right text-first"></i>
         </p>
       </div>
     </section>
     <!-- section motivate end-->
 
     <!-- section About -->
-    <section class="max-w-screen-2xl m-auto py-5 bg-slate-100">
+    <section id="about" class="max-w-screen-2xl m-auto py-5 bg-slate-100">
       <div class="text-center mb-2 md:mb-4">
-        <h1 class="text-2xl font-semibold md:text-4xl">What I Do?</h1>
+        <h1 class="text-2xl tracking-wide font-semibold md:text-4xl">What I Do?</h1>
       </div>
       <div class="flex justify-center flex-wrap">
-        <div class="group text-center border-2 hover:border-primary hover:scale-105 rounded-xl w-full bg-slate-200 mx-5 my-2 px-4 transition duration-300 md:pt-4 md:w-60">
-          <p class="text-6xl text-primary"><i class="bx bx-globe"></i></p>
+        <div class="group text-center border-2 hover:border-first text-first hover:scale-105 rounded-xl w-full bg-slate-200 mx-5 my-2 px-4 transition duration-300 md:pt-4 md:w-60">
+          <p class="text-6xl text-first"><i class="bx bx-globe"></i></p>
           <p class="text-base text-slate-900 py-2 group-hover:text-black">Solve IT-related problems with broad knowledge. From Technology Solutions, Security, Networking, Software, Hardware, Electricity</p>
         </div>
-        <div class="group text-center border-2 hover:border-primary hover:scale-105 rounded-xl w-full bg-slate-200 mx-5 my-2 px-4 transition duration-300 md:pt-4 md:w-56">
-          <p class="text-6xl text-primary"><i class="bx bx-paint"></i></p>
+        <div class="group text-center border-2 hover:border-first text-first hover:scale-105 rounded-xl w-full bg-slate-200 mx-5 my-2 px-4 transition duration-300 md:pt-4 md:w-56">
+          <p class="text-6xl text-first"><i class="bx bx-paint"></i></p>
           <p class="text-base text-slate-900 py-2 group-hover:text-black">Build responsive website design using Bootstrap and Tailwind CSS</p>
         </div>
-        <div class="group text-center border-2 hover:border-primary hover:scale-105 rounded-xl w-full bg-slate-200 mx-5 my-2 px-4 transition duration-300 md:pt-4 md:w-56">
-          <p class="text-6xl text-primary"><i class="bx bx-code-alt"></i></p>
+        <div class="group text-center border-2 hover:border-first text-first hover:scale-105 rounded-xl w-full bg-slate-200 mx-5 my-2 px-4 transition duration-300 md:pt-4 md:w-56">
+          <p class="text-6xl text-first"><i class="bx bx-code-alt"></i></p>
           <p class="text-base text-slate-900 py-2 group-hover:text-black">Improve quality website functionality using PHP with the Laravel framework</p>
         </div>
-        <div class="group text-center border-2 hover:border-primary hover:scale-105 rounded-xl w-full bg-slate-200 mx-5 my-2 px-4 transition duration-300 md:pt-4 md:w-80">
-          <p class="text-6xl text-primary"><i class="bx bxl-git"></i></p>
+        <div class="group text-center border-2 hover:border-first text-first hover:scale-105 rounded-xl w-full bg-slate-200 mx-5 my-2 px-4 transition duration-300 md:pt-4 md:w-80">
+          <p class="text-6xl text-first"><i class="bx bxl-git"></i></p>
           <p class="text-base text-slate-900 py-2 group-hover:text-black">
             Working with a team via GitHub, proven by my internship experience at PT Maksi Media Indonesia as a back-end developer using the Java Springboot framework, even though I have just tried a new language, I like new challenges
           </p>
@@ -199,113 +200,271 @@
     <!-- about section end -->
 
     <!-- Project section -->
-    <section class="max-w-screen-2xl py-5 m-auto">
-      <div class="text-center text-2xl font-semibold">
-        <h1>Project</h1>
-        <div></div>
+
+    <section id="project">
+      <div class="text-center">
+        <h1 class="text-2xl font-semibold">Project</h1>
+      </div>
+
+      <div class="max-w-2xl m-auto">
+        <!-- TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com -->
+        <div class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+          <!-- TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com -->
+          <div id="carouselExampleIndicators" class="relative" data-te-carousel-init data-te-ride="carousel">
+            <!--Carousel indicators-->
+            <div class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0" data-te-carousel-indicators>
+              <button
+                type="button"
+                data-te-target="#carouselExampleIndicators"
+                data-te-slide-to="0"
+                data-te-carousel-active
+                class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-te-target="#carouselExampleIndicators"
+                data-te-slide-to="1"
+                class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-te-target="#carouselExampleIndicators"
+                data-te-slide-to="2"
+                class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+
+            <!--Carousel items-->
+            <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+              <!--First item-->
+              <div class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none" data-te-carousel-item data-te-carousel-active>
+                <img src="dist/img/Tampilan Utama.png" class="max-h-72 w-full" alt="Wild Landscape" />
+              </div>
+              <!--Second item-->
+              <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none" data-te-carousel-item>
+                <img src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp" class="block w-full" alt="Camera" />
+              </div>
+              <!--Third item-->
+              <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none" data-te-carousel-item>
+                <img src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp" class="block w-full" alt="Exotic Fruits" />
+              </div>
+            </div>
+
+            <!--Carousel controls - prev item-->
+            <button
+              class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+              type="button"
+              data-te-target="#carouselExampleIndicators"
+              data-te-slide="prev"
+            >
+              <span class="inline-block h-8 w-8">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>
+              </span>
+              <span class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Previous</span>
+            </button>
+            <!--Carousel controls - next item-->
+            <button
+              class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+              type="button"
+              data-te-target="#carouselExampleIndicators"
+              data-te-slide="next"
+            >
+              <span class="inline-block h-8 w-8">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+              </span>
+              <span class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
+            </button>
+          </div>
+          <div class="p-6">
+            <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">Website Wisata Kampoeng Ciherang</h5>
+            <div>
+              <div class="relative group p-4 w-14 h-14 inline-flex md:w-[70px] md:h-w-[70px] justify-center items-center">
+                <img class="group-hover:opacity-25 transition duration-300" src="dist/img/Laravel.png" alt="" />
+                <p class="absolute font-semibold invisible group-hover:visible opacity-100 bg-slate-950 text-white text-xs md:text-base px-2 rounded-xl">Laravel</p>
+              </div>
+              <div class="relative group p-4 w-14 h-14 inline-flex md:w-20 md:h-20 justify-center items-center">
+                <img class="group-hover:opacity-25 transition duration-300" src="dist/img/Bootstra.png" alt="" />
+                <p class="absolute font-semibold invisible group-hover:visible opacity-100 bg-slate-950 text-white text-xs md:text-base px-2 rounded-xl">Bootstrap</p>
+              </div>
+              <div class="relative group p-4 w-16 h-16 inline-flex md:w-24 md:h-24 justify-center items-center">
+                <img class="group-hover:opacity-25 transition duration-300" src="dist/img/MySQL.png" alt="" />
+                <p class="absolute font-semibold invisible group-hover:visible opacity-100 bg-slate-950 text-white text-xs md:text-base px-2 rounded-xl">MySQL</p>
+              </div>
+            </div>
+
+            <button
+              type="button"
+              class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+              data-te-toggle="modal"
+              data-te-target="#exampleModal"
+              data-te-ripple-init
+              data-te-ripple-color="light"
+            >
+              Descripcion
+            </button>
+            <button
+              type="button"
+              class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+              data-te-ripple-init
+              data-te-ripple-color="light"
+            >
+              Button
+            </button>
+
+            <!-- Modal -->
+            <div data-te-modal-init class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div data-te-modal-dialog-ref class="pointer-events-none relative w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:max-w-[500px]">
+                <div class="min-[576px]:shadow-[0_0.5rem_1rem_rgba(#000, 0.15)] pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-lg outline-none dark:bg-neutral-600">
+                  <div class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
+                    <!--Modal title-->
+                    <h5 class="text-xl font-medium leading-normal text-neutral-800 dark:text-neutral-200" id="exampleModalLabel">Modal title</h5>
+                    <!--Close button-->
+                    <button type="button" class="box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none" data-te-modal-dismiss aria-label="Close">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </button>
+                  </div>
+
+                  <!--Modal body-->
+                  <div class="relative flex-auto p-4" data-te-modal-body-ref>Modal body text goes here.</div>
+
+                  <!--Modal footer-->
+                  <div class="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
+                    <button
+                      type="button"
+                      class="inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200"
+                      data-te-modal-dismiss
+                      data-te-ripple-init
+                      data-te-ripple-color="light"
+                    >
+                      Close
+                    </button>
+                    <button
+                      type="button"
+                      class="ml-1 inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+                      data-te-ripple-init
+                      data-te-ripple-color="light"
+                    >
+                      Save changes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
     <!-- Project section end -->
-    <button
-      data-ripple-light="true"
-      data-dialog-target="dialog"
-      class="select-none rounded-lg bg-gradient-to-tr from-gray-900 to-gray-800 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-    >
-      Open Dialog
-    </button>
-    <div
-      data-dialog-backdrop="dialog"
-      data-dialog-backdrop-close="true"
-      class="pointer-events-none fixed inset-0 z-[999] grid h-screen w-screen place-items-center bg-black bg-opacity-60 opacity-0 backdrop-blur-sm transition-opacity duration-300"
-    >
-      <div data-dialog="dialog" class="relative m-4 w-2/5 min-w-[40%] max-w-[40%] rounded-lg bg-white font-sans text-base font-light leading-relaxed text-blue-gray-500 antialiased shadow-2xl">
-        <div class="flex items-center p-4 font-sans text-2xl antialiased font-semibold leading-snug shrink-0 text-blue-gray-900">Its a simple dialog.</div>
-        <div class="relative p-4 font-sans text-base antialiased font-light leading-relaxed border-t border-b border-t-blue-gray-100 border-b-blue-gray-100 text-blue-gray-500">
-          The key to more success is to have a lot of pillows. Put it this way, it took me twenty five years to get these plants, twenty five years of blood sweat and tears, and I&apos;m never giving up, I&apos;m just getting started.
-          I&apos;m up to something. Fan luv.
+    <!-- section Experience -->
+    <section id="experience" class="max-w-screen-2xl m-auto">
+      <div class="text-center">
+        <h1 class="font-semibold text-2xl md:text-4xl dark:text-first">Experience</h1>
+      </div>
+      <div class="flex justify-center m-4">
+        <div class="flex justify-center max-w-6xl p-3">
+          <div class="pr-2 pt-1">
+            <p class="bg-slate-200 rounded-full px-2 py-1 ring-2 ring-offset-2"><i class="bx bx-briefcase"></i></p>
+          </div>
+          <div class="ml-2 md:ml-5">
+            <h1 class="text-xl lg:text-2xl font-semibold text-first">Back-End Developer</h1>
+            <p class="text-base font-semibold">PT Maksi Media Indonesia</p>
+            <p class="text-base py-2 text-slate-900">
+              Created the MaximpleV2 application, which is a Microsoft Excel data parsing application that integrates with Accurate accounting software using Java Springboot programming language technology and worked with the team via
+              GitHub
+            </p>
+            <p>(Internship) September 2022 - Januari 2023</p>
+          </div>
         </div>
-        <div class="flex flex-wrap items-center justify-end p-4 shrink-0 text-blue-gray-500">
+      </div>
+    </section>
+
+    <!-- section Experience end -->
+
+    <div id="accordionExample">
+      <div class="border border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
+        <h2 class="mb-0" id="headingTwo">
           <button
-            data-ripple-dark="true"
-            data-dialog-close="true"
-            class="px-6 py-3 mr-1 font-sans text-xs font-bold text-red-500 uppercase transition-all rounded-lg middle none center hover:bg-red-500/10 active:bg-red-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+            type="button"
+            data-te-collapse-init
+            data-te-collapse-collapsed
+            data-te-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
           >
-            Cancel
+            More Work Experience
+            <span
+              class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+            </span>
           </button>
-          <button
-            data-ripple-light="true"
-            data-dialog-close="true"
-            class="middle none center rounded-lg bg-gradient-to-tr from-green-600 to-green-400 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-green-500/20 transition-all hover:shadow-lg hover:shadow-green-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-          >
-            Confirm
-          </button>
+        </h2>
+        <div id="collapseTwo" class="!visible hidden" data-te-collapse-item aria-labelledby="headingTwo" data-te-parent="#accordionExample">
+          <div class="px-5 py-4">
+            <div class="flex justify-evenly flex-auto flex-wrap md:flex-nowrap m-4">
+              <div class="flex justify-center p-3">
+                <div class="mr-2 mt-1">
+                  <p class="bg-slate-200 rounded-full px-2 py-1 ring-2 ring-offset-2"><i class="bx bx-briefcase"></i></p>
+                </div>
+                <div class="ml-2">
+                  <h1 class="text-xl font-semibold text-first">Operator Sewing Needle Machine</h1>
+                  <p class="text-base font-semibold">PT CCH Indonesia</p>
+                  <p class="text-base py-2 text-slate-900">Sewing operators must be able to control product quality and sewing speed in each process carried out, so that the resulting product is of grade A quality.</p>
+                  <p>(Fulltime) September 2022 - Januari 2023</p>
+                </div>
+              </div>
+              <div class="flex justify-center p-3">
+                <div class="mr-2 mt-1">
+                  <p class="bg-slate-200 rounded-full px-2 py-1 ring-2 ring-offset-2"><i class="bx bx-briefcase"></i></p>
+                </div>
+                <div class="ml-2 md:max-w-4xl lg:max-w-7xl">
+                  <h1 class="text-xl font-semibold text-first">Sales Marketing Executive</h1>
+                  <p class="text-base font-semibold">PT Nusantara Jaya Sentosa</p>
+                  <p class="text-base py-2 text-slate-900">
+                    Providing the best service and establishing relationships with potential consumers. Explain the specifications of the products sold to consumers. Provides a simulation of the costs that must be incurred and explains the
+                    benefits that will be obtained. Communicate with customers.
+                  </p>
+                  <p>(Fulltime) September 2022 - Januari 2023</p>
+                </div>
+              </div>
+              <div class="flex justify-center p-3">
+                <div class="mr-2 mt-1">
+                  <p class="bg-slate-200 rounded-full px-2 py-1 ring-2 ring-offset-2"><i class="bx bx-briefcase"></i></p>
+                </div>
+                <div class="ml-2">
+                  <h1 class="text-xl font-semibold text-first">Operator Sewing Som Machine</h1>
+                  <p class="text-base font-semibold">PT Daese Garmin</p>
+                  <p class="text-base py-2 text-slate-900">Sewing operators must be able to control product quality and sewing speed in each process carried out, so that the resulting product is of grade A quality.</p>
+                  <p>(Fulltime) September 2022 - Januari 2023</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-      <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-    </a>
-
-    <div id="indicators-carousel" class="relative w-full" data-carousel="static">
-      <!-- Carousel wrapper -->
-      <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-        <!-- Item 1 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-          <img src="/dist/img/code.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-        </div>
-        <!-- Item 2 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="/dist/img/Bootstra.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-        </div>
-        <!-- Item 3 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="/dist/img/Laravel.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-        </div>
-        <!-- Item 4 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="/dist/img/git.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-        </div>
-        <!-- Item 5 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="/dist/img/PHP.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-        </div>
-      </div>
-      <!-- Slider indicators -->
-      <div class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2">
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-      </div>
-      <!-- Slider controls -->
-      <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-        <span
-          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-teal-200 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
-        >
-          <svg class="w-4 h-4 text-primary dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
-          </svg>
-          <span class="sr-only">Previous</span>
-        </span>
-      </button>
-      <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-        <span
-          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-primary dark:group-focus:ring-gray-800/70 group-focus:outline-none"
-        >
-          <svg class="w-4 h-4 text-primary dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
-          </svg>
-          <span class="sr-only">Next</span>
-        </span>
-      </button>
+    <div class="pt-[50rem]">
+      <h1>jarak</h1>
     </div>
 
     <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
-      <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-      <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+      <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+      <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
           fill-rule="evenodd"
@@ -314,11 +473,7 @@
       </svg>
     </button>
 
-    <div class="pt-[50rem]">
-      <h1>jarak</h1>
-    </div>
     <script src="/dist/js/script.js"></script>
-    <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
-    <script src="/node_modules/@material-tailwind/html/scripts/dialog.js"></script>
+    <script type="text/javascript" src="/node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
   </body>
 </html>

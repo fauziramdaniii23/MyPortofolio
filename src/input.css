@@ -14,7 +14,7 @@
 }
 
 .menu-active {
-  @apply text-primary;
+  @apply text-first;
 }
 
 .nav-active > span:nth-child(1) {
@@ -25,4 +25,12 @@
 }
 .nav-active > span:nth-child(3) {
   @apply -rotate-[41deg];
+}
+.animate-before {
+  @apply overflow-hidden;
+  max-height: 100px;
+}
+.animate-after {
+  @apply bg-first;
+  max-height: 500px;
 }

@@ -1,13 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 
-// const withMT = require('@material-tailwind/html/utils/withMT');
 module.exports = {
-  content: ['index.html', './node_modules/flowbite/**/*.js'],
+  content: ['./index.html', './node_modules/tw-elements/dist/js/**/*.js'],
   darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        primary: '#5eead4',
+        first: '#5eead4',
         dark: '#0f172a',
       },
       animation: {
@@ -22,5 +21,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require('flowbite/plugin')],
+  plugins: [require('tw-elements/dist/plugin.cjs')],
 };

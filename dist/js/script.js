@@ -1,19 +1,19 @@
 // NavButton
 const navButton = document.querySelector('#navButton');
 const navMenu = document.querySelector('#nav-menu');
-const header = document.querySelector('#header');
+// const header = document.querySelector('#header');
 
 navButton.addEventListener('click', function () {
   navButton.classList.toggle('nav-active');
   navMenu.classList.toggle('hidden');
 });
 
-window.addEventListener('click', function (e) {
-  if (e.target != navButton && e.target != navMenu) {
-    navButton.classList.remove('nav-active');
-    navMenu.classList.add('hidden');
-  }
-});
+// window.addEventListener('click', function (e) {
+//   if (e.target != navButton && e.target != navMenu) {
+//     navButton.classList.remove('nav-active');
+//     navMenu.classList.add('hidden');
+//   }
+// });
 // Navbar
 window.onscroll = function () {
   const header = document.querySelector('header');
@@ -64,3 +64,25 @@ themeToggleBtn.addEventListener('click', function () {
     }
   }
 });
+
+(function () {
+  var triggers = document.querySelectorAll('[data-collapse-target]');
+  var collapses = document.querySelectorAll('[data-collapse]');
+  if (triggers && collapses) {
+    Array.from(triggers).forEach(function (trigger) {
+      return Array.from(collapses).forEach(function (collapse) {
+        if (trigger.dataset.collapseTarget === collapse.dataset.collapse) {
+          trigger.addEventListener('click', function () {
+            if (collapse.style.height && collapse.style.height !== '0px') {
+              collapse.style.height = 0;
+              trigger.removeAttribute('open');
+            } else {
+              collapse.style.height = ''.concat(collapse.firstChild.clientHeight, 'px');
+              trigger.setAttribute('open', '');
+            }
+          });
+        }
+      });
+    });
+  }
+})();
