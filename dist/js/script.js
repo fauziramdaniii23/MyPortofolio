@@ -86,3 +86,46 @@ themeToggleBtn.addEventListener('click', function () {
     });
   }
 })();
+
+// Fungsi untuk menangani pengiriman formulir
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+  e.preventDefault(); // Mencegah pengiriman formulir default
+
+  // Dapatkan nilai input
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var message = document.getElementById('message').value;
+
+  // Kirim formulir menggunakan AJAX atau metode lain sesuai kebutuhan Anda
+  // Di sini, kita menggunakan metode fetch sebagai contoh
+  fetch('https://formspree.io/f/xjvnbyzg', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ name: name, email: email, message: message }),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      // Tambahkan SweetAlert untuk menampilkan pesan sukses
+      Swal.fire({
+        icon: 'success',
+        title: 'Sukses!',
+        text: 'Send Message Success',
+        confirmButtonText: 'OK',
+      }).then(() => {
+        // Reset formulir setelah menutup SweetAlert (opsional)
+        document.getElementById('contactForm').reset();
+      });
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+      // Tambahkan SweetAlert untuk menampilkan pesan error (opsional)
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Send Message Fail',
+        confirmButtonText: 'OK',
+      });
+    });
+});

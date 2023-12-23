@@ -5,6 +5,9 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      boxShadow: {
+        'shadow-icon': '0 0 1rem rgb(94, 234, 212)',
+      },
       colors: {
         first: '#5eead4',
         dark: '#0f172a',
