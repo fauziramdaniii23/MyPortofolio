@@ -4,7 +4,7 @@
 
 .background-image {
   @apply bg-fixed bg-cover bg-center;
-  background-image: url('dist/img/bg.jpg');
+  background-image: url('dist/img/bggg.jpg');
 }
 
 .navbar-fix {
@@ -13,7 +13,7 @@
 }
 
 .menu-active {
-  @apply text-first;
+  @apply text-first dark:text-first;
 }
 
 .nav-active > span:nth-child(1) {
