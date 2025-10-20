@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify && xcopy index.html dist\\ /Y && xcopy img dist\\img\\ /E /I /Y && xcopy js dist\\js\\ /E /I /Y && xcopy pdf dist\\pdf\\ /E /I /Y",
     "start": "npx serve dist"
   },
   "keywords": [],
