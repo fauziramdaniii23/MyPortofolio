@@ -1,0 +1,768 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio | Fauzi Ramdani</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script>
+      if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
+  </head>
+  <body class="bg-slate-50 dark:bg-slate-700">
+    <!-- header start -->
+    <header id="navbar" class="absolute top-0 left-0 right-0 max-w-screen-2xl mx-auto w-full flex z-50">
+      <div class="container flex justify-between items-center py-4">
+        <div class="ml-4 items-center">
+          <a href="" class="inline-block font-bold text-lg text-first">fauziramdani</a>
+        </div>
+
+        <div class="flex items-center justify-between">
+          <button id="navButton" name="navButton" type="button" class="block absolute right-4 hover:scale-110 transition duration-300 lg:hidden">
+            <span class="w-[20px] h-[2px] my-1 block bg-dark dark:bg-slate-50 transition ease-in-out duration-300 origin-top-left"></span>
+            <span class="w-[20px] h-[2px] my-1 block bg-dark dark:bg-slate-50 transition ease-in-out duration-300"></span>
+            <span class="w-[20px] h-[2px] my-1 block bg-dark dark:bg-slate-50 transition ease-in-out duration-300 origin-bottom-left"></span>
+          </button>
+          <nav
+            id="nav-menu"
+            class="absolute hidden py-5 bg-white dark:bg-slate-700 dark:bg-opacity-95 dark:lg:bg-transparent shadow-xl right-4 top-full max-w-[200px] bg-opacity-95 w-full rounded-lg lg:static lg:inline-block lg:max-w-full lg:bg-transparent lg:shadow-none lg:p-0"
+          >
+            <div class="flex flex-col justify-center lg:static lg:inline-block">
+              <a href="#home" class="menu-active text-base text-slate-700 dark:text-white py-2 mx-6 font-semibold hover:text-first dark:hover:text-first">Home</a>
+              <a href="#about" class="text-base text-slate-700 dark:text-white py-2 mx-6 font-semibold hover:text-first dark:hover:text-first">About</a>
+              <a href="#project" class="text-base text-slate-700 dark:text-white py-2 mx-6 font-semibold hover:text-first dark:hover:text-first">Project</a>
+              <a href="#experience" class="text-base text-slate-700 dark:text-white py-2 mx-6 font-semibold hover:text-first dark:hover:text-first">Experience</a>
+              <a href="#certificate" class="text-base text-slate-700 dark:text-white py-2 mx-6 font-semibold hover:text-first dark:hover:text-first">Certificate</a>
+              <a href="#contact" class="text-base text-slate-700 dark:text-white py-2 mx-6 font-semibold hover:text-first dark:hover:text-first">Contact</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- header start end -->
+
+    <!-- hero section start -->
+    <section id="home" class="relative max-w-screen-2xl m-auto z-10 flex justify-center pt-20 lg:pt-28">
+      <div class="w-full m-5 flex flex-col-reverse md:flex-row md:justify-around">
+        <div class="">
+          <h1 id="nama" class="text-base font-semibold mb-4 text-slate-900 dark:text-white">
+            Hello there, <span class="inline-block animate-hallo text-2xl">👋</span> <span class="inline-block font-bold">My Name</span> <span class="block text-4xl md:text-6xl text-first font-bold">Fauzi Ramdani</span>
+          </h1>
+          <p class="mb-2 text-base"><span id="profesi" class="text-2xl font-bold bg-first rounded-xl px-3 py-1 text-white"></span></p>
+          <p id="deskripsi" class="container text-slate-800 dark:text-white font-medium my-4 max-w-2xl md:mb-6">
+            Fresh graduate of Informatics Engineering from Adhirajasa Reswara Sanjaya University, GPA 3.48 (4 years). With internship experience at PT. Maksi media Indonesia as a Back-end Developer. Looking for opportunities for a career as
+            a software engineer
+          </p>
+
+          <div id="icon" class="container mb-4 md:mb-6">
+            <a
+              id="email"
+              href="mailto:fauziramdani234@gmail.com"
+              target="_blank"
+              class="group relative inline-flex justify-center items-center bg-transparent ml-1 md:ml-2 mb-2 border-[2px] border-first w-[50px] h-[50px] rounded-full md:w-16 md:h-16 hover:bg-first text-first hover:scale-110 transition-all duration-500 hover:shadow-shadow-icon"
+              ><i class="bx bx-envelope text-2xl md:text-3xl text-first font-bold group-hover:text-white dark:group-hover:text-slate-700"></i><span class="absolute -bottom-6 text-sm invisible group-hover:visible text-first">Email</span></a
+            >
+            <a
+              id="wa"
+              href="https://wa.me/6285659761805"
+              target="_blank"
+              class="group relative inline-flex justify-center items-center bg-transparent ml-1 md:ml-2 mb-2 border-[2px] border-first w-[50px] h-[50px] rounded-full md:w-16 md:h-16 hover:bg-first text-first hover:scale-110 transition duration-500 hover:shadow-shadow-icon"
+              ><i class="bx bxl-whatsapp text-2xl md:text-3xl text-first font-bold group-hover:text-white dark:group-hover:text-slate-700"></i
+              ><span class="absolute -bottom-6 text-sm invisible group-hover:visible text-first">Whatsapp</span></a
+            >
+            <a
+              id="instagram"
+              href="https://www.instagram.com/fauziramdani___"
+              target="_blank"
+              class="group relative inline-flex justify-center items-center bg-transparent ml-1 md:ml-2 mb-2 border-[2px] border-first text-first w-[50px] h-[50px] rounded-full md:w-16 md:h-16 hover:bg-first hover:scale-110 transition duration-500 hover:shadow-shadow-icon"
+              ><i class="bx bxl-instagram-alt text-2xl md:text-3xl text-first font-bold group-hover:text-white dark:group-hover:text-slate-700"></i
+              ><span class="absolute -bottom-6 text-sm invisible group-hover:visible text-first">Instagram</span></a
+            >
+            <a
+              id="github"
+              href="https://github.com/fauziramdaniii23"
+              target="_blank"
+              class="group relative inline-flex justify-center items-center bg-transparent ml-1 md:ml-2 mb-2 border-[2px] border-first text-first w-[50px] h-[50px] rounded-full md:w-16 md:h-16 hover:bg-first hover:scale-110 transition duration-500 hover:shadow-shadow-icon"
+              ><i class="bx bxl-github text-2xl md:text-3xl text-first font-bold group-hover:text-white dark:group-hover:text-slate-700"></i><span class="absolute -bottom-6 text-sm invisible group-hover:visible text-first">Github</span></a
+            >
+
+            <a
+              id="linkedin"
+              href="https://www.linkedin.com/in/fauzi-ramdani-873baa238"
+              target="_blank"
+              class="group relative inline-flex justify-center items-center bg-transparent ml-1 md:ml-2 mb-2 border-[2px] border-first w-[50px] h-[50px] rounded-full md:w-16 md:h-16 hover:bg-first text-first hover:scale-110 transition duration-500 hover:shadow-shadow-icon"
+              ><i class="bx bxl-linkedin-square text-2xl md:text-3xl text-first font-bold group-hover:text-white dark:group-hover:text-slate-700"></i
+              ><span class="absolute -bottom-6 text-sm invisible group-hover:visible text-first">Linkedin</span></a
+            >
+          </div>
+
+          <button id="resume" class="inline-flex font-semibold shadow-lg bg-first text-white text-xl py-3 px-8 rounded-full hover:shadow-shadow-icon hover:scale-105 transition duration-200 group hover:bg-teal-500">
+            <i data-feather="arrow-down" class="bx bx-down-arrow-alt text-2xl bg-teal-500 rounded-full mr-2 animate-bounce group-hover:animate-none text-first group-hover:bg-first group-hover:text-white group-hover:shadow-lg"></i>
+            View Resume
+          </button>
+        </div>
+        <div id="foto-profil" class="flex mb-4 items-center justify-center">
+          <div class="lg:mr-16 md:-mt-11">
+            <div class="relative w-80">
+              <img src="dist/img/fauzi.png" alt="fauzi" class="relative w-52 md:w-64 mx-auto rounded-full" />
+              <div class="absolute top-5 md:top-10 -translate-x-1/2 left-1/2" style="z-index: -1">
+                <svg widht="250px" height="250px" class="animate-spin-slow lg:w-72" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill="#5eead4"
+                    d="M42.6,-72.6C56.4,-65.8,69.7,-56.8,76.4,-44.4C83.1,-31.9,83.3,-16,81.4,-1.1C79.6,13.8,75.7,27.6,69.1,40.4C62.6,53.1,53.3,64.7,41.4,70.6C29.4,76.4,14.7,76.4,-0.3,76.9C-15.4,77.5,-30.7,78.7,-43.2,73.2C-55.7,67.6,-65.3,55.5,-70.9,42.2C-76.4,28.8,-77.9,14.4,-79.4,-0.8C-80.8,-16.1,-82.2,-32.2,-76.3,-44.9C-70.4,-57.7,-57.3,-67,-43.4,-73.8C-29.4,-80.6,-14.7,-84.7,-0.2,-84.4C14.4,-84.1,28.7,-79.4,42.6,-72.6Z"
+                    transform="translate(100 100) scale(1.0)"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero section end -->
+    <!-- section skills -->
+    <section class="md:flex md:justify-evenly mt-8 mb-4 md:mb-6 md:mt-10">
+      <div class="w-full text-center">
+        <h1 data-aos="fade-up" class="m-auto text-lg md:text-xl font-bold text-slate-800 dark:text-slate-100 mb-2">
+          <span class="underline underline-offset-8 decoration-first">SKILLS</span> <span class="text-slate-500 text-sm">and</span> <span class="underline underline-offset-8 decoration-first">TOOLS</span>
+        </h1>
+        <div class="flex justify-center flex-wrap md:gap-2">
+          <div data-aos="flip-left" data-aos-delay="50" class="relative group p-4 w-16 h-16 md:w-24 md:h-24 inline-flex justify-center items-center">
+            <img class="group-hover:opacity-25 transition duration-300" src="dist/img/HTML5.png" alt="" />
+            <p class="absolute font-semibold invisible group-hover:visible opacity-100 bg-slate-950 text-white text-xs md:text-base px-2 rounded-xl">HTML</p>
+          </div>
+          <div data-aos="flip-left" data-aos-delay="100" class="relative group p-4 mt-1 w-[56px] h-[56px] md:w-20 md:h-20 md:mt-2 inline-flex justify-center items-center">
+            <img class="group-hover:opacity-25 transition duration-300" src="dist/img/CSS3_logo.png" alt="" />
+            <p class="absolute font-semibold invisible group-hover:visible opacity-100 bg-slate-950 text-white text-xs md:text-base px-2 rounded-xl">CSS</p>
+          </div>
+          <div data-aos="flip-left" data-aos-delay="200" class="relative group p-4 w-16 h-16 inline-flex md:w-24 md:h-24 justify-center items-center">
+            <img class="group-hover:opacity-25 transition duration-300" src="dist/img/Bootstra.png" alt="" />
+            <p class="absolute font-semibold invisible group-hover:visible opacity-100 bg-slate-950 text-white text-xs md:text-base px-2 rounded-xl">Bootstrap</p>
+          </div>
+          <div data-aos="flip-left" data-aos-delay="300" class="relative group p-4 w-16 h-16 inline-flex md:w-24 md:h-24 justify-center items-center">
+            <img class="group-hover:opacity-25 transition duration-300" src="dist/img/Tailwind_CSS.png" alt="" />
+            <p class="absolute font-semibold invisible group-hover:visible opacity-100 bg-slate-950 text-white text-xs md:text-base px-2 rounded-xl">Tailwind</p>
+          </div>
+          <div data-aos="flip-left" data-aos-delay="400" class="relative group p-4 w-16 h-16 inline-flex md:w-24 md:h-24 justify-center items-center">
+            <img class="group-hover:opacity-25 transition duration-300" src="dist/img/javascript.png" alt="" />
+            <p class="absolute font-semibold invisible group-hover:visible opacity-100 bg-slate-950 text-white text-xs md:text-base px-2 rounded-xl">Javascript</p>
+          </div>
+          <div data-aos="flip-left" data-aos-delay="500" class="relative group p-4 w-16 h-16 inline-flex md:w-24 md:h-24 justify-center items-center">
+            <img class="group-hover:opacity-25 transition duration-300" src="dist/img/PHP.png" alt="" />
+            <p class="absolute font-semibold invisible group-hover:visible opacity-100 bg-slate-950 text-white text-xs md:text-base px-2 rounded-xl">PHP</p>
+          </div>
+          <div data-aos="flip-left" data-aos-delay="600" class="relative group p-4 w-16 h-16 inline-flex md:w-24 md:h-24 justify-center items-center">
+            <img class="group-hover:opacity-25 transition duration-300" src="dist/img/Laravel.png" alt="" />
+            <p class="absolute font-semibold invisible group-hover:visible opacity-100 bg-slate-950 text-white text-xs md:text-base px-2 rounded-xl">Laravel</p>
+          </div>
+          <div data-aos="flip-left" data-aos-delay="700" class="relative group p-4 w-16 h-16 inline-flex md:w-24 md:h-24 justify-center items-center">
+            <img class="group-hover:opacity-25 transition duration-300" src="dist/img/MySQL.png" alt="" />
+            <p class="absolute font-semibold invisible group-hover:visible opacity-100 bg-slate-950 text-white text-xs md:text-base px-2 rounded-xl">Database</p>
+          </div>
+          <div data-aos="flip-left" data-aos-delay="900" class="relative group p-4 w-16 h-16 inline-flex md:w-24 md:h-24 justify-center items-center">
+            <img class="group-hover:opacity-25 transition duration-300" src="dist/img/Visual_Studio_Code.png" alt="" />
+            <p class="absolute font-semibold invisible group-hover:visible opacity-100 bg-slate-950 text-white text-xs md:text-base px-2 rounded-xl">Vs Code</p>
+          </div>
+          <div data-aos="flip-left" data-aos-delay="1000" class="relative group p-4 w-16 h-16 inline-flex md:w-24 md:h-24 justify-center items-center">
+            <img class="group-hover:opacity-25 transition duration-300" src="dist/img/git.png" alt="" />
+            <p class="absolute font-semibold invisible group-hover:visible opacity-100 bg-slate-950 text-white text-xs md:text-base px-2 rounded-xl">Github</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section skills end -->
+    <!-- section motivate -->
+    <section class="max-w-screen-2xl h-36 lg:h-48 m-auto">
+      <div class="background-image flex h-full justify-center items-center text-center" style="background-image: url(dist/img/bggg.jpg)">
+        <p class="inline-block bg-black mx-10 md:px-10 md:py-4 italic rounded-md text-white md:text-2xl font-bold">
+          <i class="bx bxs-quote-alt-left text-first"></i> If you never try, you'll never know what you are capable of <i class="bx bxs-quote-alt-right text-first"></i>
+        </p>
+      </div>
+    </section>
+    <!-- section motivate end-->
+
+    <!-- section About -->
+    <section id="about" class="max-w-screen-2xl m-auto py-6 lg:py-8 bg-slate-100 dark:bg-slate-800">
+      <div data-aos="fade-up" data-aos-duration="3000" class="text-center mb-2 md:mb-4">
+        <h1 class="text-2xl tracking-wide font-semibold md:text-4xl dark:text-first">What I Do?</h1>
+      </div>
+      <div class="flex justify-center flex-wrap">
+        <div
+          data-aos="zoom-in-up"
+          class="group text-center border-2 hover:border-first text-first hover:scale-105 rounded-xl w-full bg-slate-200 dark:bg-slate-600 dark:border-slate-800 dark:hover:border-first mx-5 my-2 px-4 transition duration-300 md:pt-4 md:w-60"
+        >
+          <p class="text-6xl text-first"><i class="bx bx-globe"></i></p>
+          <p class="text-base text-slate-900 py-2 dark:text-slate-100">Solve IT-related problems with broad knowledge. From Technology Solutions, Security, Networking, Software, Hardware, Electricity</p>
+        </div>
+        <div
+          data-aos="zoom-in-up"
+          class="group text-center border-2 hover:border-first text-first hover:scale-105 rounded-xl w-full bg-slate-200 dark:bg-slate-600 dark:border-slate-800 dark:hover:border-first mx-5 my-2 px-4 transition duration-300 md:pt-4 md:w-56"
+        >
+          <p class="text-6xl text-first"><i class="bx bx-paint"></i></p>
+          <p class="text-base text-slate-900 py-2 dark:text-slate-100">Build responsive website design using Bootstrap and Tailwind CSS</p>
+        </div>
+        <div
+          data-aos="zoom-in-up"
+          class="group text-center border-2 hover:border-first text-first hover:scale-105 rounded-xl w-full bg-slate-200 dark:bg-slate-600 dark:border-slate-800 dark:hover:border-first mx-5 my-2 px-4 transition duration-300 md:pt-4 md:w-56"
+        >
+          <p class="text-6xl text-first"><i class="bx bx-code-alt"></i></p>
+          <p class="text-base text-slate-900 py-2 dark:text-slate-100">Improve quality website functionality using PHP with the Laravel framework</p>
+        </div>
+        <div
+          data-aos="zoom-in-up"
+          class="group text-center border-2 hover:border-first text-first hover:scale-105 rounded-xl w-full bg-slate-200 dark:bg-slate-600 dark:border-slate-800 dark:hover:border-first mx-5 my-2 px-4 transition duration-300 md:pt-4 md:w-80"
+        >
+          <p class="text-6xl text-first"><i class="bx bxl-git"></i></p>
+          <p class="text-base text-slate-900 py-2 dark:text-slate-100">
+            Working with a team via GitHub, proven by my internship experience at PT Maksi Media Indonesia as a back-end developer using the Java Springboot framework, even though I have just tried a new language, I like new challenges
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- about section end -->
+
+    <!-- Project section -->
+    <section id="project" class="py-5">
+      <div data-aos="fade-up" data-aos-duration="3000" class="text-center py-2 mb-2 md:my-4">
+        <h1 class="text-2xl tracking-wider uppercase font-semibold md:text-4xl dark:text-first">Project</h1>
+      </div>
+
+      <div data-aos="zoom-in-up" class="max-w-2xl m-auto">
+        <div class="block rounded-lg">
+          <div id="carouselExampleIndicators" class="relative" data-te-carousel-init data-te-ride="carousel">
+            <!--Carousel indicators-->
+            <div class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0" data-te-carousel-indicators>
+              <button
+                type="button"
+                data-te-target="#carouselExampleIndicators"
+                data-te-slide-to="0"
+                data-te-carousel-active
+                class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-te-target="#carouselExampleIndicators"
+                data-te-slide-to="1"
+                class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-te-target="#carouselExampleIndicators"
+                data-te-slide-to="2"
+                class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+
+            <!--Carousel items-->
+            <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+              <!--First item-->
+              <div class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none" data-te-carousel-item data-te-carousel-active>
+                <img src="dist/img/project/Tampilan Utama.png" class="block w-full" alt="Wild Landscape" />
+              </div>
+              <!--Second item-->
+              <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none" data-te-carousel-item>
+                <img src="dist/img/project/Kampoeng-Ciherang-AdminWahana.png" class="block w-full" alt="Camera" />
+              </div>
+              <!--Third item-->
+              <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none" data-te-carousel-item>
+                <img src="dist/img/project/pesan3.png" class="block w-full" alt="Exotic Fruits" />
+              </div>
+            </div>
+            <!--Carousel controls - prev item-->
+            <button
+              class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+              type="button"
+              data-te-target="#carouselExampleIndicators"
+              data-te-slide="prev"
+            >
+              <span class="inline-block h-8 w-8">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>
+              </span>
+              <span class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Previous</span>
+            </button>
+            <!--Carousel controls - next item-->
+            <button
+              class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+              type="button"
+              data-te-target="#carouselExampleIndicators"
+              data-te-slide="next"
+            >
+              <span class="inline-block h-8 w-8">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+              </span>
+              <span class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
+            </button>
+          </div>
+          <div class="p-6">
+            <h5 class="mb-2 text-xl md:text-2xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">Website Wisata Kampoeng Ciherang</h5>
+            <div>
+              <div class="relative group p-4 w-14 h-14 inline-flex md:w-[70px] md:h-w-[70px] justify-center items-center">
+                <img class="group-hover:opacity-25 transition duration-300" src="dist/img/Laravel.png" alt="" />
+                <p class="absolute font-semibold invisible group-hover:visible opacity-100 bg-slate-950 text-white text-xs md:text-base px-2 rounded-xl">Laravel</p>
+              </div>
+              <div class="relative group p-4 w-14 h-14 inline-flex md:w-20 md:h-20 justify-center items-center">
+                <img class="group-hover:opacity-25 transition duration-300" src="dist/img/Bootstra.png" alt="" />
+                <p class="absolute font-semibold invisible group-hover:visible opacity-100 bg-slate-950 text-white text-xs md:text-base px-2 rounded-xl">Bootstrap</p>
+              </div>
+              <div class="relative group p-4 w-16 h-16 inline-flex md:w-24 md:h-24 justify-center items-center">
+                <img class="group-hover:opacity-25 transition duration-300" src="dist/img/MySQL.png" alt="" />
+                <p class="absolute font-semibold invisible group-hover:visible opacity-100 bg-slate-950 text-white text-xs md:text-base px-2 rounded-xl">MySQL</p>
+              </div>
+            </div>
+
+            <button
+              type="button"
+              class="inline-block rounded-xl bg-first px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-teal-400 hover:shadow-shadow-icon dark:hover:shadow-shadow-icon focus:bg-teal-400 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-teal-400 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+              data-te-toggle="modal"
+              data-te-target="#exampleModal"
+              data-te-ripple-init
+              data-te-ripple-color="light"
+            >
+              Descripcion
+            </button>
+            <a
+              href="https://kampoengciherang.000webhostapp.com/"
+              target="_blank"
+              class="inline-block rounded-xl bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+              data-te-ripple-init
+              data-te-ripple-color="light"
+            >
+              Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div data-te-modal-init class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div data-te-modal-dialog-ref class="pointer-events-none relative w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:max-w-[500px]">
+          <div class="min-[576px]:shadow-[0_0.5rem_1rem_rgba(#000, 0.15)] pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-lg outline-none dark:bg-neutral-600">
+            <div class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
+              <h5 class="text-xl font-medium leading-normal text-neutral-800 dark:text-neutral-200" id="exampleModalLabel">Feature</h5>
+
+              <button type="button" class="box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none dark:text-white" data-te-modal-dismiss aria-label="Close">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+
+            <div class="relative flex-auto p-4" data-te-modal-body-ref>
+              <li class="dark:text-slate-50">admin (Create, Read, Update, Delete )</li>
+              <li class="dark:text-slate-50">Ticket orderers use the Midtrans payment gateway method</li>
+              <li class="dark:text-slate-50">relationship between image data and wahana</li>
+            </div>
+
+            <div class="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
+              <button
+                type="button"
+                class="inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200"
+                data-te-modal-dismiss
+                data-te-ripple-init
+                data-te-ripple-color="light"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Project section end -->
+
+    <!-- section Experience -->
+    <section id="experience" class="max-w-screen-2xl m-auto py-5">
+      <div data-aos="fade-up" data-aos-duration="3000" class="text-center">
+        <h1 class="font-semibold tracking-wider uppercase text-2xl md:text-4xl dark:text-first">Experience</h1>
+      </div>
+      <div data-aos="fade-right" data-aos-duration="2000" class="m-2 text-lg lg:text-xl">
+        <h1 class="font-semibold dark:text-slate-100"><i class="bx bx-chevrons-right bx-flashing bx-flip-vertical text-first"></i>Work Experience</h1>
+      </div>
+      <div class="flex justify-center mb-4">
+        <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" class="flex justify-center max-w-6xl p-3">
+          <div class="pr-2 pt-1">
+            <p class="bg-slate-200 rounded-full px-2 ring-2 ring-offset-2"><i class="bx bxs-briefcase py-2"></i></p>
+          </div>
+          <div class="ml-2 md:ml-5">
+            <h1 class="text-xl lg:text-2xl font-semibold mb-1 text-first">Back-End Developer</h1>
+            <p class="text-base font-semibold dark:text-slate-100">PT Maksi Media Indonesia</p>
+            <p class="text-base py-2 text-slate-900 dark:text-slate-200">
+              Created the MaximpleV2 application, which is a Microsoft Excel data parsing application that integrates with Accurate accounting software using Java Springboot programming language technology and worked with the team via
+              GitHub
+            </p>
+            <p class="dark:text-slate-100">(Internship) Oktober 2022 - Januari 2023</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="accordionExample">
+        <div class="border border-neutral-200 bg-slate-200 dark:border-neutral-600 dark:bg-slate-800">
+          <h2 class="mb-0" id="headingTwo5">
+            <button
+              class="group relative flex w-full items-center border-2 rounded-lg bg-slate-200 p-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-slate-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-slate-100 [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-slate-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-100 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+              type="button"
+              data-te-collapse-init
+              data-te-collapse-collapsed
+              data-te-target="#collapseTwo5"
+              aria-expanded="true"
+              aria-controls="collapseTwo5"
+            >
+              <i class="bx bx-chevrons-right"></i> More Work Experience
+              <span
+                class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </span>
+            </button>
+          </h2>
+          <div id="collapseTwo5" class="!visible hidden" data-te-collapse-item aria-labelledby="headingTwo5" data-te-parent="#accordionExample">
+            <div class="px-5 py-4">
+              <div class="flex justify-evenly flex-auto flex-wrap md:flex-nowrap">
+                <div class="flex justify-center md:p-3 my-2">
+                  <div class="mr-2 mt-1">
+                    <p class="bg-slate-200 rounded-full px-2 ring-2 ring-offset-2"><i class="bx bxs-briefcase py-2"></i></p>
+                  </div>
+                  <div class="ml-2">
+                    <h1 class="text-xl font-semibold text-first mb-1">Operator Sewing Needle Machine</h1>
+                    <p class="text-base font-semibold dark:text-slate-100">PT CCH Indonesia</p>
+                    <p class="text-base py-2 text-slate-900 dark:text-slate-200">Sewing operators must be able to control product quality and sewing speed in each process carried out, so that the resulting product is of grade A quality.</p>
+                    <p class="dark:text-slate-100">(Fulltime) Oktober 2020 - Desember 2023</p>
+                  </div>
+                </div>
+                <div class="flex justify-center md:p-3 my-2">
+                  <div class="mr-2 mt-1">
+                    <p class="bg-slate-200 rounded-full px-2 ring-2 ring-offset-2"><i class="bx bxs-briefcase py-2"></i></p>
+                  </div>
+                  <div class="ml-2 md:max-w-4xl lg:max-w-7xl">
+                    <h1 class="text-xl font-semibold text-first mb-1">Sales Marketing Executive</h1>
+                    <p class="text-base font-semibold dark:text-slate-100">PT Nusantara Jaya Sentosa</p>
+                    <p class="text-base py-2 text-slate-900 dark:text-slate-200">
+                      Providing the best service and establishing relationships with potential consumers. Explain the specifications of the products sold to consumers. Provides a simulation of the costs that must be incurred and explains
+                      the benefits that will be obtained. Communicate with customers.
+                    </p>
+                    <p class="dark:text-slate-100">(Fulltime) Juni 2020 - Oktober 2020</p>
+                  </div>
+                </div>
+                <div class="flex justify-center md:p-3 my-2">
+                  <div class="mr-2 mt-1">
+                    <p class="bg-slate-200 rounded-full px-2 ring-2 ring-offset-2"><i class="bx bxs-briefcase py-2"></i></p>
+                  </div>
+                  <div class="ml-2">
+                    <h1 class="text-xl font-semibold text-first mb-1">Operator Sewing Som Machine</h1>
+                    <p class="text-base font-semibold dark:text-slate-100">PT Daese Garmin</p>
+                    <p class="text-base py-2 text-slate-900 dark:text-slate-200">Sewing operators must be able to control product quality and sewing speed in each process carried out, so that the resulting product is of grade A quality.</p>
+                    <p class="dark:text-slate-100">(Fulltime) Juli 2017 - April 2023</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-aos="fade-right" data-aos-duration="2000" class="m-2 pt-2 text-lg lg:text-xl">
+        <h1 class="font-semibold dark:text-slate-50"><i class="bx bx-chevrons-right bx-flashing bx-flip-vertical text-first"></i>Education</h1>
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" class="flex justify-center mb-4">
+        <div class="flex w-3/4 p-3">
+          <div class="pr-2 pt-1">
+            <p class="bg-slate-200 rounded-full px-2 ring-2 ring-offset-2"><i class="bx bxs-graduation py-2"></i></p>
+          </div>
+          <div class="ml-2 md:ml-5">
+            <h1 class="text-xl lg:text-2xl font-semibold uppercase text-first">ARS University</h1>
+            <p class="text-base font-semibold dark:text-slate-100">Informatics Engineering (Teknik Informatika)</p>
+
+            <p class="dark:text-slate-200">Bachelor's Degree (GPA 3,48)</p>
+            <p class="dark:text-slate-100">2019-2023</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="accordionExample">
+        <div class="border border-neutral-200 bg-slate-200 dark:border-neutral-600 dark:bg-slate-800">
+          <h2 class="mb-0" id="headingThree5">
+            <button
+              class="group relative flex w-full items-center border-2 rounded-lg bg-slate-200 p-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-slate-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-slate-100 [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-slate-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-100 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+              type="button"
+              data-te-collapse-init
+              data-te-collapse-collapsed
+              data-te-target="#collapseThree5"
+              aria-expanded="true"
+              aria-controls="collapseThree5"
+            >
+              <i class="bx bx-chevrons-right"></i> More Education
+              <span
+                class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </span>
+            </button>
+          </h2>
+          <div id="collapseThree5" class="!visible hidden" data-te-collapse-item aria-labelledby="headingThree5" data-te-parent="#accordionExample">
+            <div class="px-5 py-4">
+              <div class="flex md:justify-evenly flex-wrap md:flex-nowrap">
+                <div class="flex justify-center md:p-3 my-2">
+                  <div class="mr-2 mt-1">
+                    <p class="bg-slate-200 rounded-full px-2 ring-2 ring-offset-2"><i class="bx bxs-graduation py-2"></i></p>
+                  </div>
+                  <div class="ml-2">
+                    <h1 class="text-xl font-semibold uppercase text-first">SMA N Tanjungsari</h1>
+                    <p class="text-base font-semibold dark:text-slate-100">Science Major (IPA)</p>
+                    <p class="dark:text-slate-50">2014-2017</p>
+                  </div>
+                </div>
+                <div class="flex justify-center md:p-3 my-2">
+                  <div class="mr-2 mt-1">
+                    <p class="bg-slate-200 rounded-full px-2 ring-2 ring-offset-2"><i class="bx bxs-graduation py-2"></i></p>
+                  </div>
+                  <div class="ml-2 md:max-w-4xl lg:max-w-7xl">
+                    <h1 class="text-xl font-semibold text-first uppercase">smp n 1 tanjungsari</h1>
+                    <p class="dark:text-slate-50">2011-2014</p>
+                  </div>
+                </div>
+                <div class="flex justify-center md:p-3 my-2">
+                  <div class="mr-2 mt-1">
+                    <p class="bg-slate-200 rounded-full px-2 ring-2 ring-offset-2"><i class="bx bxs-graduation py-2"></i></p>
+                  </div>
+                  <div class="ml-2">
+                    <h1 class="text-xl font-semibold text-first uppercase">sdn kebonhui</h1>
+                    <p class="dark:text-slate-50">2005-2011</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section Experience end -->
+
+    <!-- section certificate -->
+    <section id="certificate" class="max-w-screen-2xl m-auto py-5 lg:p-8">
+      <div data-aos="fade-up" data-aos-duration="3000" class="text-center mb-4">
+        <h1 class="font-semibold text-2xl md:text-4xl dark:text-first">Certificate of Competence</h1>
+      </div>
+      <div class="container mx-auto py-2">
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+          <a data-aos="zoom-in-up" href="/dist/pdf/juniorwebprogrammer.pdf" class="rounded-lg" target="_blank">
+            <div class="w-full hover:scale-105 transition duration-300">
+              <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center scale-90" src="/dist/img/sertifikat/bnsp.jpg" />
+            </div>
+          </a>
+          <a data-aos="zoom-in-up" data-aos-delay="100" href="/dist/pdf/sertifikat_course_Web_dasar.pdf" class="" target="_blank">
+            <div class="w-full hover:scale-105 transition duration-300">
+              <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center" src="/dist/img/sertifikat/sertifikat_course_Web_dasar_page-0001.jpg" />
+            </div>
+          </a>
+          <a data-aos="zoom-in-up" data-aos-delay="200" href="/dist/pdf/sertifikat_course_backend.pdf" class="" target="_blank">
+            <div class="w-full hover:scale-105 transition duration-300">
+              <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center" src="/dist/img/sertifikat/sertifikat_course_backend_page-0001.jpg" />
+            </div>
+          </a>
+          <a data-aos="zoom-in-up" data-aos-delay="300" href="/dist/pdf/sertifikat_course_javasript.pdf" class="" target="_blank">
+            <div class="w-full hover:scale-105 transition duration-300">
+              <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center" src="/dist/img/sertifikat/sertifikat_course_javasript_page-0001.jpg" />
+            </div>
+          </a>
+          <a data-aos="zoom-in-up" data-aos-delay="400" href="/dist/pdf/sertifikat_course_Dasar devops.pdf" class="" target="_blank">
+            <div class="w-full hover:scale-105 transition duration-300">
+              <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center" src="/dist/img/sertifikat/sertifikat_course_Dasar devops_page-0001.jpg" />
+            </div>
+          </a>
+          <a data-aos="zoom-in-up" data-aos-delay="500" href="/dist/pdf/sertifikat_course_dasar aws.pdf" class="" target="_blank">
+            <div class="w-full hover:scale-105 transition duration-300">
+              <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center" src="/dist/img/sertifikat/sertifikat_course_dasar aws_page-0001.jpg" />
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- section certificate end -->
+
+    <!-- <section contact> -->
+    <section id="contact" class="max-w-screen-2xl m-auto py-5">
+      <div data-aos="fade-up" data-aos-duration="3000" class="text-center mb-4">
+        <h1 class="font-semibold text-2xl md:text-4xl dark:text-first">Contact Me</h1>
+      </div>
+      <div class="p-4 md:flex md:justify-evenly gap-4">
+        <div data-aos="fade-right" class="mx-4 my-2 md:mx-0 md:flex md:flex-col">
+          <h1 class="font-semibold text-xl mb-1 dark:text-slate-50">My Address</h1>
+          <p class="mt-1 dark:text-slate-100"><i class="bx bxs-map-pin"></i> Jl.Staat Spoors, Tanjungsari</p>
+          <p class="mb-1 dark:text-slate-100">Sumedang</p>
+          <p class="my-1 dark:text-slate-100"><i class="bx bxs-envelope"></i> fauziramdani234@gmail.com</p>
+          <p class="my-1 dark:text-slate-100"><i class="bx bxs-phone"></i> 0856 5976 1805</p>
+        </div>
+        <div data-aos="zoom-in-up" class="mx-4 my-2 md:mx-0 md:flex md:flex-col md:gap-2">
+          <h1 class="font-semibold text-xl dark:text-slate-50 mb-2">Tautan</h1>
+          <a class="dark:text-slate-100 px-1" href="#home">Home</a>
+          <a class="dark:text-slate-100 px-1" href="#about">About</a>
+          <a class="dark:text-slate-100 px-1" href="#project">Project</a>
+          <a class="dark:text-slate-100 px-1" href="#experience">Experience</a>
+          <a class="dark:text-slate-100 px-1" href="#certificate">Certificate</a>
+          <a class="dark:text-slate-100 px-1" href="#contact">Contact</a>
+        </div>
+        <div data-aos="zoom-in-up" class="block md:max-w-sm lg:max-w-lg rounded-lg px-6 md:px-0">
+          <h1 class="mb-4 mt-4 md:mt-0 font-semibold text-base dark:text-slate-50">If you have any questions, please do not hesitate to contact me</h1>
+          <form action="https://formspree.io/f/xjvnbyzg" method="POST" id="contactForm">
+            <div class="relative mb-6" data-te-input-wrapper-init>
+              <input
+                name="Fullname"
+                type="text"
+                class="peer block min-h-[auto] w-full rounded border-none bg-transparent dark:bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                id="name"
+                placeholder="Name"
+                required
+              />
+              <label
+                for="name"
+                class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-first peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-first"
+                >Name
+              </label>
+            </div>
+
+            <div class="relative mb-6" data-te-input-wrapper-init>
+              <input
+                name="email"
+                type="email"
+                class="peer block min-h-[auto] w-full rounded border-0 bg-transparent dark:bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                id="email"
+                placeholder="Email address"
+                required
+              />
+              <label
+                for="email"
+                class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-first peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-first"
+                >Email address
+              </label>
+            </div>
+
+            <div class="relative mb-6" data-te-input-wrapper-init>
+              <textarea
+                name="message"
+                class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                id="message"
+                rows="3"
+                placeholder="Message"
+                required
+              ></textarea>
+              <label
+                for="message"
+                class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-first peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-first"
+                >Message
+              </label>
+            </div>
+
+            <button
+              type="submit"
+              class="dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]] rounded-xl bg-first px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-teal-400 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-teal-400 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-teal-500 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+              data-te-ripple-init
+              data-te-ripple-color="light"
+            >
+              <i class="bx bx-send -rotate-45"></i>
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- section contact end -->
+
+    <!-- footer -->
+    <footer class="bg-slate-800 pt-4 mt-4">
+      <div class="">
+        <div class="flex justify-center mb-1">
+          <a
+            href="mailto:fauziramdani234@gmail.com"
+            target="_blank"
+            class="group relative inline-flex justify-center items-center bg-transparent ml-1 md:ml-2 mb-2 border border-first w-[40px] h-[40px] rounded-full md:w-14 md:h-14 hover:bg-first text-first hover:scale-110 transition-all duration-500 hover:shadow-2xl"
+            ><i class="bx bx-envelope text-2xl md:text-3xl text-first font-bold group-hover:text-slate-800"></i
+          ></a>
+          <a
+            href="https://wa.me/6285659761805"
+            target="_blank"
+            class="group relative inline-flex justify-center items-center bg-transparent ml-1 md:ml-2 mb-2 border border-first w-[40px] h-[40px] rounded-full md:w-14 md:h-14 hover:bg-first text-first hover:scale-110 transition duration-500 hover:shadow-2xl"
+            ><i class="bx bxl-whatsapp text-2xl md:text-3xl text-first font-bold group-hover:text-slate-800"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/fauziramdani___"
+            target="_blank"
+            class="group relative inline-flex justify-center items-center bg-transparent ml-1 md:ml-2 mb-2 border border-first text-first w-[40px] h-[40px] rounded-full md:w-14 md:h-14 hover:bg-first hover:scale-110 transition duration-500 hover:shadow-2xl"
+            ><i class="bx bxl-instagram-alt text-2xl md:text-3xl text-first font-bold group-hover:text-slate-800"></i
+          ></a>
+          <a
+            href="https://github.com/fauziramdaniii23"
+            target="_blank"
+            class="group relative inline-flex justify-center items-center bg-transparent ml-1 md:ml-2 mb-2 border border-first text-first w-[40px] h-[40px] rounded-full md:w-14 md:h-14 hover:bg-first hover:scale-110 transition duration-500 hover:shadow-2xl"
+            ><i class="bx bxl-github text-2xl md:text-3xl text-first font-bold group-hover:text-slate-800"></i
+          ></a>
+
+          <a
+            href="https://www.linkedin.com/in/fauzi-ramdani-873baa238"
+            target="_blank"
+            class="group relative inline-flex justify-center items-center bg-transparent ml-1 md:ml-2 mb-2 border border-first w-[40px] h-[40px] rounded-full md:w-14 md:h-14 hover:bg-first text-first hover:scale-110 transition duration-500 hover:shadow-2xl"
+            ><i class="bx bxl-linkedin-square text-2xl md:text-3xl text-first font-bold group-hover:text-slate-800"></i
+          ></a>
+        </div>
+        <div class="py-2 mx-4 text-center border-t border-slate-500">
+          <p class="text-slate-400">Copyright &copy; 2023 by Fauzi | All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- button back to top -->
+    <a href="#home" id="toTop" class="group fixed hidden z-[9999] w-10 h-10 right-4 bottom-20 ring-2 ring-first rounded-lg items-center justify-center hover:scale-125 hover:bg-first transition duration-300">
+      <i class="bx bx-up-arrow-alt text-2xl text-first group-hover:text-slate-100 dark:group-hover:text-slate-700"></i>
+    </a>
+
+    <!-- button swicth darkmode -->
+    <button
+      id="theme-toggle"
+      type="button"
+      class="fixed bottom-4 right-4 z-[9999] text-gray-500 dark:text-gray-400 hover:bg-first hover:scale-125 dark:hover:bg-first focus:outline-none focus:ring-3 ring-2 ring-first focus:ring-first dark:focus:ring-first rounded-lg text-sm p-2.5 transition duration-300"
+    >
+      <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+      </svg>
+      <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5 text-yellow-400 animate-spin-slow" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+        ></path>
+      </svg>
+    </button>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2000,
+        once: true,
+        offset: 80,
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="/dist/js/gsap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/dist/js/script.js"></script>
+    <script type="text/javascript" src="/node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+  </body>
+</html>
